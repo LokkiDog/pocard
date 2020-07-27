@@ -73,7 +73,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]'
@@ -83,7 +83,10 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]'
+          name: '[path][name].[ext]',
+          outputPath: '/',
+          publicPath: '',
+          useRelativePaths: true
         }
       },
       {
@@ -147,27 +150,27 @@ module.exports = {
       { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts`},
       { from: `${PATHS.src}/static`, to: ''},
     ]),
-    new VueLoaderPlugin(),
-    new FaviconsWebpackPlugin({
-      logo: `${PATHS.src}/static/favicon.png`,
-      outputPath: '/static/favicons',
-      cache: false,
-      prefix: 'static/favicons',
-      mode: 'webapp', // optional can be 'webapp' or 'light' - 'webapp' by default
-      devMode: 'webapp', // optional can be 'webapp' or 'light' - 'light' by default 
-      favicons: {
-        appName: 'Pocard',
-        appDescription: 'Site pocard.ru',
-        developerName: 'Alexander',
-        developerURL: null, // prevent retrieving from the nearest package.json
-        background: '#ddd',
-        theme_color: '#333',
-        icons: {
-          coast: false,
-          yandex: false
-        }
-      }
-    })
+    // new VueLoaderPlugin(),
+    // new FaviconsWebpackPlugin({
+    //   logo: `${PATHS.src}/static/favicon.png`,
+    //   outputPath: '/static/favicons',
+    //   cache: false,
+    //   prefix: 'static/favicons',
+    //   mode: 'webapp', // optional can be 'webapp' or 'light' - 'webapp' by default
+    //   devMode: 'webapp', // optional can be 'webapp' or 'light' - 'light' by default 
+    //   favicons: {
+    //     appName: 'Pocard',
+    //     appDescription: 'Site pocard.ru',
+    //     developerName: 'Alexander',
+    //     developerURL: null, // prevent retrieving from the nearest package.json
+    //     background: '#ddd',
+    //     theme_color: '#333',
+    //     icons: {
+    //       coast: false,
+    //       yandex: false
+    //     }
+    //   }
+    // })
   ]
   .concat(htmlPlugins)
 }
