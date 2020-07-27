@@ -37,8 +37,7 @@ module.exports = {
   },
 
   entry: {
-    app: PATHS.src,
-    lk: `${PATHS.src}/lk.js`,
+    app: PATHS.src
   },
   output: {
     filename: `${PATHS.assets}js/[name].[hash].js`,
@@ -157,8 +156,8 @@ module.exports = {
       mode: 'webapp', // optional can be 'webapp' or 'light' - 'webapp' by default
       devMode: 'webapp', // optional can be 'webapp' or 'light' - 'light' by default 
       favicons: {
-        appName: 'My Site',
-        appDescription: 'My awesome App',
+        appName: 'Pocard',
+        appDescription: 'Site pocard.ru',
         developerName: 'Alexander',
         developerURL: null, // prevent retrieving from the nearest package.json
         background: '#ddd',
