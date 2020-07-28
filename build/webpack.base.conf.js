@@ -83,8 +83,8 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
-          name: '[path][name].[ext]',
-          outputPath: '/',
+          name: '[name].[ext]',
+          outputPath: '../../assets/img/',
           publicPath: '',
           useRelativePaths: true
         }
@@ -96,7 +96,7 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
-            options: { sourceMap: true}
+            // options: { sourceMap: false}
           }, {
             loader: 'postcss-loader',
             options: { sourceMap: true, config: {path: 'postcss.config.js'}}
@@ -113,7 +113,7 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
-            options: { sourceMap: true}
+            // options: { sourceMap: true}
           }, {
             loader: 'postcss-loader',
             options: { sourceMap: true, config: {path: 'postcss.config.js'}}
@@ -147,6 +147,7 @@ module.exports = {
     // }),
     new CopyWebpackPlugin([
       { from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img`},
+      { from: `${PATHS.src}/js`, to: `${PATHS.assets}js`},
       { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts`},
       { from: `${PATHS.src}/static`, to: ''},
     ]),
