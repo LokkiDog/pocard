@@ -1,0 +1,56 @@
+.error404 {
+  @include flex(row, center, center);
+  height: calc(100vh);
+  background: url('../img/contacts-bg.jpg') bottom no-repeat #007CC3;
+  background-size: cover;
+  color: $default-color;
+  @include link_a;
+
+  &-block{
+    @include flex(column);
+    @media screen and (max-width: $smTableWidth) {
+      text-align: justify;
+    }
+  }
+  &-text {
+    margin-top: 22px;
+  }
+  &-title {
+    color: $default-color;
+    font-size: rem(40);
+    line-height: rem(46);
+  }
+  &-p {
+    margin-top: 28px;
+    font-size: rem(22);
+    line-height: rem(25);
+  }
+  &-ul{
+    margin-top: 28px;
+    font-size: rem(18);
+    line-height: rem(21);
+
+    
+  }
+  &-li {
+    position: relative;
+    padding-left: 20px;
+    line-height: 28px;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 11px;
+      width: 6px;
+      height: 6px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 4px 1px #fff;
+    }
+  }
+  br {
+    @media screen and (max-width: $smTableWidth) {
+      display: none;
+    }
+  }
+}
