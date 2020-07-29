@@ -1,0 +1,22 @@
+.form {
+  @include flex(column); 
+  margin-top: 20px;
+  &-label {
+    margin-top: 10px;
+    font-size: rem(16);
+    line-height: rem(32);
+  }
+  &-input {
+    width: 295px;
+    height: 40px;
+    font-size: rem(16);
+    line-height: rem(32px);
+    @include placeholder{
+      font-size: rem(16);
+      color: $light-color;
+    };
+  }
+  &-button {
+    margin-top: 24px;
+  }
+}

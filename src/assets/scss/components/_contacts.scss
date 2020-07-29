@@ -1,0 +1,34 @@
+.contacts {
+  @include flex(row, center, center);
+  height: calc(100vh);
+  background: url('../img/contacts-bg.jpg') bottom no-repeat #007CC3;
+  background-size: cover;
+  color: $default-color;
+  @include link_a;
+
+  &-left{
+    @include flex(column, center, center);
+  }
+  &_block {
+    width: fit-content;
+  }
+  &-title {
+    color: $default-color;
+  }
+  &-subtitle {
+    color: $default-color;
+  }
+  &-address {
+    margin-top: 30px;
+    font-size: rem(22);
+    line-height: rem(26);
+  }
+
+
+  &-right {
+    @include flex(column, center,center); 
+  }
+  &-btn {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,18 @@
+.btn {
+  width: 295px;
+  height: 40px;
+  color: $default-color;
+  border: none;
+  transition: all 0.2s;
+
+  &.btn--submit{
+    background: $warning-color;
+    &:hover {
+      box-shadow: 0 0 15px -5px #fff;
+    }
+    &:focus {
+      background: $light-color;
+      color:  $warning-color;
+    }
+  }
+}
