@@ -8,20 +8,34 @@
 
   &-left{
     @include flex(column, center, center);
+
+    @media screen and (max-width: $tableWidth ){
+      text-align: center;
+    }
   }
   &_block {
     width: fit-content;
   }
   &-title {
     color: $default-color;
+    @media screen and (max-width: $tableWidth ){
+      font-size: rem(28);
+    }
   }
   &-subtitle {
     color: $default-color;
+    @media screen and (max-width: $tableWidth ){
+      display: none;
+    }
   }
   &-address {
     margin-top: 30px;
     font-size: rem(22);
     line-height: rem(26);
+    @media screen and (max-width: $tableWidth ){
+      font-size: rem(16);
+      line-height: rem(18);
+    }
   }
 
 

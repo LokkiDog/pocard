@@ -12,10 +12,9 @@ $mainLineHeight          : 1.4;
 
 $desktopWidth            : 1280px;
 $smDesktopWidth          : 1024px;
-$tableWidth              : 768px;
-$smTableWidth            : 640px;
-$phoneWidth              : 480px;
-$smPhoneWidth            : 320px;
+$tableWidth              : 992px;
+$smTableWidth            : 768px;
+$phoneWidth              : 576px;
 
 /*
  All colors taken from:
@@ -25,6 +24,7 @@ $smPhoneWidth            : 320px;
 // Main color
 $default-color           : #ffffff;
 $primary-color           : #007CC3; //
+$primary-color-dark     : #006DAB; //
 $success-color           : #26de81;
 $danger-color            : #fc5c65;
 $warning-color           : #FDAE55; //
