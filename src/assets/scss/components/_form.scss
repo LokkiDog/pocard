@@ -11,12 +11,27 @@
     height: 40px;
     font-size: rem(16);
     line-height: rem(32px);
+    transition: all 0.2s;
+    &:focus {
+      box-shadow: 0 5px 15px -11px #333;
+    }
     @include placeholder{
       font-size: rem(16);
       color: $light-color;
     };
+    
   }
   &-button {
     margin-top: 24px;
+  }
+  &.form--reverse {
+    .form-label {
+      color: $primary-color;
+      font-weight: bold;
+      line-height: rem(22);
+    }
+    .form-input {
+      border: 1px solid $light-color;
+    }
   }
 }

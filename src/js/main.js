@@ -93,4 +93,28 @@ $(function (){
     filterCatalog($('.catalog-tabs-content li'), $('.catalog-tabs li'), 'data-catalog-');
     filterCatalog($('.catalog-tabs li'), $('.catalog-tabs-content li'), ('data-product-'));
 
+
+
+    /* 
+    ======== Модальные окна ========
+    */
+   // Закрыть на крестик или мимо
+   $('.modal-close, .modal').on("click", function (e) {
+       e.preventDefault();
+       $(this).closest('.modal').addClass('closed');
+   })
+    // Отменяем нажатие на родителя при клике на модалку
+   $('.modal-area').on("click",function (e) {
+        e.stopPropagation();
+   });
+
+   // Открытие модальных окон
+   $('.open-modal-form').on("click",function (e) {
+        $('#modal-form').removeClass('closed');
+   })
+   $('.open-modal-thanks').on("click",function (e) {
+        $('#modal-thanks').removeClass('closed');   
+    })
+   
+   
 });
