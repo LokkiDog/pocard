@@ -1,0 +1,89 @@
+.mob-menu {
+  border-top: 2px solid $primary-color;
+  text-align: center;
+  color: $primary-color;
+  padding: 20px 0;
+  transition: all 0.5s;
+  &.menu-closed{
+    display: none;
+  }
+  &-ul-1 {
+    overflow: hidden;
+    .mob-menu{
+      &-li{
+        margin-top: 10px;
+        line-height: rem(20px);
+      }
+      &-a {
+        font-weight: bold;
+        font-weight: rem(16);
+      }
+    }
+  }
+  &-ul-2 {
+    .mob-menu{
+      &-li{
+        line-height: rem(20px);
+      }
+      &-a {
+        font-weight: 400;
+      }
+    }
+  }
+   
+
+
+  li.active{
+    &::after{
+        opacity: 1;
+    }
+  }
+  li.menu-item-has-children {
+    position: relative;
+    & > a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::after{
+            content: "";
+            display: inline-block;
+            transition: all 0.3s;
+            width: 10px;
+            height: 7px;
+            flex-shrink: 0;
+            margin-left: 5px;
+            background: url("../img/ico-drop-down.svg") no-repeat center;
+        }
+    }
+  }
+  ul.sub-menu-mob{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: all 0.2s;
+    li{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 4px 0;
+        height: auto;
+        white-space: nowrap;
+        &::after{
+            display: none;
+        }
+        a:hover{
+            color: #80B6D5;
+        }
+    }
+  }
+  li.menu-item-has-children:hover {
+    a::after{
+        transform: rotate(180deg);
+    }
+    ul.sub-menu-mob {
+      display: flex;
+    }
+  }
+}

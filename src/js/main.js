@@ -116,5 +116,11 @@ $(function (){
         $('#modal-thanks').removeClass('closed');   
     })
    
-   
+    /* 
+    ======== Мобильно меню ========
+    */
+   // Открытие закрытие
+   $('#burger').on("click", function () {
+       $('#mob-menu').toggleClass('menu-closed');
+   })
 });
