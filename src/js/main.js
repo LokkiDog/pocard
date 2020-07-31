@@ -102,6 +102,7 @@ $(function (){
    $('.modal-close, .modal').on("click", function (e) {
        e.preventDefault();
        $(this).closest('.modal').addClass('closed');
+
    })
     // Отменяем нажатие на родителя при клике на модалку
    $('.modal-area').on("click",function (e) {
@@ -113,7 +114,7 @@ $(function (){
         $('#modal-form').removeClass('closed');
    })
    $('.open-modal-thanks').on("click",function (e) {
-        $('#modal-thanks').removeClass('closed');   
+        $('#modal-thanks').removeClass('closed'); 
     })
    
     /* 
@@ -124,8 +125,20 @@ $(function (){
        $('#mob-menu').toggleClass('menu-closed');
    })
 
+   // Отмена перехода по ссылке, которая раскрывается
+   $('.mob-menu-a').on("click", function (e) {
+       // Если есть дочернее меню, то НЕ переходим по ссылке
+       if($(this).siblings('.sub-menu-mob').length > 0) {
+        e.preventDefault();
+        $(this).siblings('.sub-menu-mob').slideToggle();
+       }
+        
+   });
+   
+
     /* 
     ======== Блок ИЧТОРИЯ на страницк "о компании" ========
     */
+ 
 
 });

@@ -290,6 +290,34 @@
             </main>
         </div>
     </div>
+    <div class="modal modal--form closed" id="modal-form">
+        <div class="modal-area">
+            <h2 class="modal-title title">Задать вопрос</h2>
+            <form class="modal-form form form--reverse" action="#">
+                <label for="name" class="modal-label form-label">Ваше имя *</label>
+                <input type="text" class="modal-input modal-input--name form-input" name="name" placeholder="Введите ваше имя" required>
+
+                <label for="profession" class="modal-label form-label">Название компании</label>
+                <input type="text" class="modal-input modal-input--profession form-input" name="profession" placeholder="Название учреждения, должность">
+                
+                <label for="phone" class="modal-label form-label">Телефон *</label>
+                <input type="text" class="modal-input modal-input--phone form-input" name="phone" placeholder="Введите удобный вариант связи" required>
+
+                <button type="submit" class="modal-btn btn btn--submit">Отправить</button>
+            </form>
+            <div class="close modal-close"></div>
+        </div>
+    </div>
+    <!-- /.modal modal--form -->
+
+    <div class="modal modal--thanks closed" id="modal-thanks">
+        <div class="modal-area">
+            <h1 class="modal-title title">Спасибо за заявку.</h1>
+            <h2 class="modal-subtitle subtitle">Мы свяжемся с вами в ближайшее время!</h2>
+            <div class="close modal-close"></div>
+        </div>
+    </div>
+    <!-- /.modal modal--thanks -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/jquery.mousewheel.min.js"></script>
