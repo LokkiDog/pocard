@@ -31,7 +31,15 @@
     }
   }
    
-
+  &_info{
+    display: none;
+    margin-top: 15px;
+    height: 90px;
+    @media screen and (max-width: $phoneWidth){
+      @include flex(column, space-around,center);
+    }
+    
+  }
 
   li.active{
     &::after{
