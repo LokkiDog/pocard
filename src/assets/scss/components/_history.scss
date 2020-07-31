@@ -2,20 +2,27 @@
   // display: none;
   margin-top: 120px;
   margin-bottom: 190px;
+  padding: 76px 0;
   position: relative;
+  @media screen and (max-width: $smTableWidth ){
+      display: none;
+  }
+  .row {
+      margin: 0 5px;
+  }
   .container-fluid {
       padding: 0;
   }
   &::before{
-      content: "";
-      display: block;
-      width: 100%;
-      height: 705px;
-      background: url(../img/about-bg-2.jpg) no-repeat center/cover;
-      position: absolute;
-      top: -275px;
-      left: 0;
-      z-index: -1;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 713px;
+    background: url('../img/about-bg-2.jpg') no-repeat 50%/cover;
+    position: absolute;
+    top: -226px;
+    left: 0;
+    z-index: -1;
   }
   &-box{
     //   overflow: hidden;
@@ -27,6 +34,7 @@
       overflow-x: scroll;
       margin-bottom: -22px;
       margin-right: -20px;
+      margin-left: -20px;
       
   }
   &-item{
