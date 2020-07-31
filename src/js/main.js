@@ -123,4 +123,9 @@ $(function (){
    $('#burger').on("click", function () {
        $('#mob-menu').toggleClass('menu-closed');
    })
+
+    /* 
+    ======== Блок ИЧТОРИЯ на страницк "о компании" ========
+    */
+
 });
