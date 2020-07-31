@@ -11,7 +11,8 @@
     <div class="wrapper">
         <div class="content">
             <!-- Header -->
-            <header class="header">
+            <!-- Header -->
+            <header class="header header_non-border">
                 <div class="header-top">
                     <div class="container">
                         <div class="row">
@@ -68,11 +69,11 @@
                                                 О компании
                                             </a>
                                         </li>
-                                        <li class="active drop-section">
+                                        <li class="menu-item-has-children">
                                             <a href="#">
                                                 Каталог продукции
                                             </a>
-                                            <ul class="drop-down">
+                                            <ul class="sub-menu">
                                                 <li>
                                                     <a href="#">
                                                         Подменю
@@ -80,16 +81,16 @@
                                                 </li>
                                                 <li>
                                                     <a href="#">
-                                                        Подменю
+                                                        Подменю ПодменюПодменюПодменю
                                                     </a>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="drop-section">
+                                        <li class="menu-item-has-children">
                                             <a href="#">
                                                 Технологии афереза
                                             </a>
-                                            <ul class="drop-down">
+                                            <ul class="sub-menu">
                                                 <li>
                                                     <a href="#">
                                                         Подменю
@@ -124,6 +125,144 @@
                     </div>
                 </div>
             </header>
+            <header class="header_mob header_mob_non-border">
+                <div class="header_mob-top">
+                    <div class="container-fluid">
+                        <div class="row no-gutters align-items-center">
+  
+                            <!-- logo -->
+                            <div class="col-10 col-sm-2 col-md-1 header_mob__menu">
+                              <a href="#" class="logo">
+                                  <img src="assets/img/logo.svg" alt="Pocard">
+                              </a>
+                            </div>
+                            <!-- search -->
+                            <div class="d-none d-md-block col-md-4">
+                                <div class="search header_mob__search">
+                                    <form action="#" class="search-form">
+                                        <input type="text"> 
+                                        <button>
+                                            <img src="assets/img/ico-search.svg" alt="search">
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- info -->
+                            <div class="d-none d-sm-block col-sm-9 col-md-6">
+                                <div class="header_mob__info">
+                                    <div class="link-phone">
+                                        <img src="assets/img/ico-phone.svg" alt="Pohne">
+                                        <a href="tel:+74954146815">+ 7(495)414-68-15</a>
+                                    </div>
+                                    <div class="link-question">
+                                        <img src="assets/img/ico-circle.svg" alt="Circle">
+                                        <a class="open-modal-form" href="#">Задать вопрос</a>
+                                    </div>
+                                    <ul class="lang">
+                                        <li class="lang-active">
+                                            <a href="#">
+                                                Ru
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                En
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- burger -->
+                            <div class="col-2 col-sm-1">
+                              <div class="burger header_mob__burger" id="burger">
+                                <input type="checkbox" />
+                                <span id="burger-span1"></span>
+                                <span id="burger-span2"></span>
+                                <span id="burger-span3"></span>
+                              </div>
+                              <!-- /.burger header_mob__burger -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- header_mob -->
+            <menu class="mob-menu menu-closed" id="mob-menu">
+                <ul class="mob-menu-ul-1">
+                  <li class="mob-menu-li">
+                      <a href="#" class="mob-menu-a">О компании</a>
+                  </li>
+                  <li class="mob-menu-li menu-item-has-children">
+                      <a href="#" class="mob-menu-a ">Каталог продукции</a>
+                      <ul class="mob-menu-ul-2 sub-menu-mob">
+                          <li class="mob-menu-li">
+                              <a href="" class="mob-menu-a">Общая информация</a>
+                          </li>
+                          <li class="mob-menu-li">
+                              <a href="" class="mob-menu-a">АВО Адсопарк</a>
+                          </li>
+                          <li class="mob-menu-li">
+                              <a href="" class="mob-menu-a">2</a>
+                          </li>
+                          <li class="mob-menu-li">
+                              <a href="" class="mob-menu-a">3</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="mob-menu-li menu-item-has-children">
+                      <a href="#" class="mob-menu-a">Технологиии афереза</a>
+                      <ul class="mob-menu-ul-2 sub-menu-mob">
+                          <li class="mob-menu-li">
+                              <a href="" class="mob-menu-a">Общая информация</a>
+                          </li>
+                          <li class="mob-menu-li">
+                              <a href="" class="mob-menu-a">АВО Адсопарк</a>
+                          </li>
+                          <li class="mob-menu-li">
+                              <a href="" class="mob-menu-a">Информация для пациентов</a>
+                          </li>
+                          <li class="mob-menu-li">
+                              <a href="" class="mob-menu-a">Библиотека для профессионалов</a>
+                          </li>
+                          <li class="mob-menu-li">
+                              <a href="" class="mob-menu-a">Контакты</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="mob-menu-li">
+                      <a href="#" class="mob-menu-a">нформация для пациентов</a>
+                  </li>
+                  <li class="mob-menu-li">
+                      <a href="#" class="mob-menu-a">Библиотека для профессионалов</a>
+                  </li>
+                  <li class="mob-menu-li">
+                      <a href="#" class="mob-menu-a">Контакты</a>
+                  </li>
+                </ul>
+                <div class="info mob-menu_info">
+                    <div class="link-phone">
+                        <img src="assets/img/ico-phone.svg" alt="Pohne">
+                        <a href="tel:+74954146815">+ 7(495)414-68-15</a>
+                    </div>
+                    <div class="link-question">
+                        <img src="assets/img/ico-circle.svg" alt="Circle">
+                        <a class="open-modal-form" href="#">Задать вопрос</a>
+                    </div>
+                    <ul class="lang">
+                        <li class="lang-active">
+                            <a href="#">
+                                Ru
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                En
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </menu>
+            <!-- /.mob-menu -->
 
             <main>
                 <section class="about-section top-bg-section">

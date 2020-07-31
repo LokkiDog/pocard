@@ -18,14 +18,16 @@
       z-index: -1;
   }
   &-box{
-      overflow: hidden;
+    //   overflow: hidden;
   }
   &-inner{
       display: flex;
-      height: 247px;
+      height: 305px;
+      padding: 0 0 60px 0;
       overflow-x: scroll;
       margin-bottom: -22px;
       margin-right: -20px;
+      
   }
   &-item{
       display: flex;
@@ -97,3 +99,5 @@
       }
   }
 }
+
+

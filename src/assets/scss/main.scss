@@ -774,6 +774,28 @@ a strong{
         }
     }
 }
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+::-webkit-scrollbar:vertical {
+    width: 12px;
+}
+::-webkit-scrollbar:horizontal {
+    height: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba($primary-color, .5);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-track:horizontal {
+    border-radius: 10px;
+    background-color: rgba($primary-color, .2);
+}
 // ----------------------------------------------------------------------------
 // Link components style
 // ----------------------------------------------------------------------------
