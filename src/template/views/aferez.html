@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <title>Pocard</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <!-- Header -->
+           <!-- Header -->
+           <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="search header__search">
+                                <form action="#" class="search-form">
+                                    <input type="text"> 
+                                    <button>
+                                        <img src="assets/img/ico-search.svg" alt="search">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-5 offset-lg-3">
+                            <div class="header__info">
+                                <div class="link-phone">
+                                    <img src="assets/img/ico-phone.svg" alt="Pohne">
+                                    <a href="tel:+74954146815">+ 7(495)414-68-15</a>
+                                </div>
+                                <div class="link-question">
+                                    <img src="assets/img/ico-circle.svg" alt="Circle">
+                                    <a class="open-modal-form" href="#">Задать вопрос</a>
+                                </div>
+                                <ul class="lang">
+                                    <li class="lang-active">
+                                        <a href="#">
+                                            Ru
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            En
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-1 header__menu">
+                            <a href="#" class="logo">
+                                <img src="assets/img/logo.svg" alt="Pocard">
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-11">
+                            <nav class="header__nav nav">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            О компании
+                                        </a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">
+                                            Каталог продукции
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">
+                                                    Подменю
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Подменю ПодменюПодменюПодменю
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">
+                                            Технологии афереза
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">
+                                                    Подменю
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Подменю
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Информация для пациентов
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Библиотека для профессионалов
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="header_mob">
+            <div class="header_mob-top">
+                <div class="container-fluid">
+                    <div class="row no-gutters align-items-center">
+
+                        <!-- logo -->
+                        <div class="col-10 col-sm-2 col-md-1 header_mob__menu">
+                          <a href="#" class="logo">
+                              <img src="assets/img/logo.svg" alt="Pocard">
+                          </a>
+                        </div>
+                        <!-- search -->
+                        <div class="d-none d-md-block col-md-4">
+                            <div class="search header_mob__search">
+                                <form action="#" class="search-form">
+                                    <input type="text"> 
+                                    <button>
+                                        <img src="assets/img/ico-search.svg" alt="search">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- info -->
+                        <div class="d-none d-sm-block col-sm-9 col-md-6">
+                            <div class="header_mob__info">
+                                <div class="link-phone">
+                                    <img src="assets/img/ico-phone.svg" alt="Pohne">
+                                    <a href="tel:+74954146815">+ 7(495)414-68-15</a>
+                                </div>
+                                <div class="link-question">
+                                    <img src="assets/img/ico-circle.svg" alt="Circle">
+                                    <a class="open-modal-form" href="#">Задать вопрос</a>
+                                </div>
+                                <ul class="lang">
+                                    <li class="lang-active">
+                                        <a href="#">
+                                            Ru
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            En
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- burger -->
+                        <div class="col-2 col-sm-1">
+                          <div class="burger header_mob__burger" id="burger">
+                            <input type="checkbox" />
+                            <span id="burger-span1"></span>
+                            <span id="burger-span2"></span>
+                            <span id="burger-span3"></span>
+                          </div>
+                          <!-- /.burger header_mob__burger -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header_mob -->
+        <menu class="mob-menu menu-closed" id="mob-menu">
+            <ul class="mob-menu-ul-1">
+              <li class="mob-menu-li">
+                  <a href="#" class="mob-menu-a">О компании</a>
+              </li>
+              <li class="mob-menu-li menu-item-has-children">
+                  <a href="#" class="mob-menu-a ">Каталог продукции</a>
+                  <ul class="mob-menu-ul-2 sub-menu-mob">
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">Общая информация</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">АВО Адсопарк</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">2</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">3</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="mob-menu-li menu-item-has-children">
+                  <a href="#" class="mob-menu-a">Технологиии афереза</a>
+                  <ul class="mob-menu-ul-2 sub-menu-mob">
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">Общая информация</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">АВО Адсопарк</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">Информация для пациентов</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">Библиотека для профессионалов</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">Контакты</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="mob-menu-li">
+                  <a href="#" class="mob-menu-a">нформация для пациентов</a>
+              </li>
+              <li class="mob-menu-li">
+                  <a href="#" class="mob-menu-a">Библиотека для профессионалов</a>
+              </li>
+              <li class="mob-menu-li">
+                  <a href="#" class="mob-menu-a">Контакты</a>
+              </li>
+            </ul>
+            <div class="info mob-menu_info">
+                <div class="link-phone">
+                    <img src="assets/img/ico-phone.svg" alt="Pohne">
+                    <a href="tel:+74954146815">+ 7(495)414-68-15</a>
+                </div>
+                <div class="link-question">
+                    <img src="assets/img/ico-circle.svg" alt="Circle">
+                    <a class="open-modal-form" href="#">Задать вопрос</a>
+                </div>
+                <ul class="lang">
+                    <li class="lang-active">
+                        <a href="#">
+                            Ru
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            En
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </menu>
+        <!-- /.mob-menu -->
+
+            <main>
+              <section class="aferez-info top-bg-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 ">
+                            <h2 class="h2 section-title">
+                              Технологии терапевтического афереза
+                            </h2>
+                            <p>
+                              В течение жизни, под влиянием различных факторов: образа жизни,
+                              наследственности, окружающей среды, в крови человека накапливаются патогенные вещества. 
+                            </p>
+                            <p>
+                              Аутоантитела, циркулирующие иммунные комплексы, холестерин, эндогенные и экзогенные токсины, прионы, вирусы и микроорганизмы становятся причиной возникновения и развития заболеваний.
+                              Удаление же патогенных веществ из организма уменьшает тяжесть заболевания, его клинические проявления, а в ряде случаев приводит к полному выздоровлению.
+                            </p>
+                            <p> 
+                              Традиционным подходом к лечению большинства заболеваний является
+                              медикаментозная терапия, однако существуют ситуации, когда данный метод лечения
+                              имеет существенные ограничения:
+                            </p>
+                            <ol class="aferez-list">
+                              <li class="aferez-list-item">Резистентность к медикаментозной терапии</li>
+                              <li class="aferez-list-item">Непереносимость лекарственных средств пациентом</li>
+                              <li class="aferez-list-item">Отсутствие медикаментозной терапии</li>
+                            </ol>
+                            <p>
+                              В таких случаях применение технологий терапевтического афереза не только оправдано, но и является необходимым.
+                            </p>
+                            <p>
+                              Терапевтический (лечебный) аферез (от греч. aphaireō отнимать, отбирать) – обобщенное название группы методов экстракорпоральной гемокоррекции, применяющихся с лечебной целью, в основе которых лежит удаление (выделение) из крови ее отдельных фракций или компонентов.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </section>
+              <section class="product-info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-12">
+                            <div class="product-info-box product-info-box_min">
+                                <div class="product-info-box__title">
+                                    <h2 class="h2">
+                                      Историческая справка
+                                    </h2>
+                                </div>
+                                <div class="product-info-box__body">
+                                    <p>
+                                      Первые работы о терапевтическом аферезе появились в начале ХХ века, когда в
+                                      1914 году вышли 2 публикации об использовании плазмафереза (одного из видов
+                                      терапевтического афереза) разных исследовательских групп, причем одна из них
+                                      принадлежала профессорам военно-медицинской академии Санкт-Петербурга В.А.
+                                      Юревичу и Н.К. Розенбергу. <br>
+                                      Позже, в 1944 г., американские ученые получили плазму от доноров также методом плазмафереза.
+                                      В России в 1962 г. активно заниматься плазмаферезом начал А. Киселев
+                                      (ЦОЛИППК). А в Казахстане этот метод начали применять в 1964 г. для заготовки плазмы,
+                                      в 1971 г. стали иммунизировать доноров и получать антистафилококковую плазму.
+                                      В1987 г. был внедрен двухкратный плазмаферез (разделение консервированной крови на
+                                      плазму и эритроцитарную массу, с последующим удалением плазмы.
+                                      Таким образом, развитие методов экстракопорального очищения крови привело к возникновению технологий, позволяющих воздействовать на состав крови селективно: то есть удалять не всю плазму, а только ее часть, состоящую, в основном, из патогенных компонентов.
+                                      Данные методы существенно превосходят плазмаферез по эффективности и, благодаря
+                                      избирательному воздействию на состав крови, являются более безопасными при повторным применении.
+                                      Вершиной технологий терапевтического афереза является иммуносорбция – использование антител в качестве лиганда для специфического связывания патогенного компонента. Сорбенты на основе аффинных лигандов, имеющие узкую специфичность, доказали безопасность и эффективность и послужили основой развития сорбционных технологий.
+                                      На сегодняшний день существует тенденция к разработке и внедрению синтетических лигандов, созданию и поиску более эффективных матриц. Актуальным вопросом также является развитие технологии гемосорбции, позволяющих работать с цельной кровью пациента.
+                                      Технологии терапевтического афереза в настоящее время широко применяются для
+                                      лечения сердечно-сосудистых и аутоиммунных заболеваний, печеночной
+                                      недостаточности, в акушерстве и гинекологии, при трансплантации органов, в
+                                      дерматологии, онкологии, ревматологии, при острой интоксикации и вирусных
+                                      инфекциях.
+                                    </p>
+                                    <button class="down-btn">
+                                        <img src="assets/img/down-black.svg" alt="Open">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 ">
+                            <div class="product-info-box">
+                                <div class="product-info-box__title">
+                                    <h2 class="h2">
+                                        Описание
+                                    </h2>
+                                </div>
+                                <div class="product-info-box__body">
+                                    <p>
+                                        Колонки выпускаются в пластиковом корпусе объемом 150 и 300 мл. <br>
+                                        Специфичность колонки обеспечивают активные ингредиенты – сорбенты. <br>
+                                        Сорбенты представляют собой инертную полисахаридную матрицу, на которую иммобилизованы синтетические коньюгаты
+                                        олигосахаридов, имитирующие антигены групп крови. <br>
+                                        Колонки АВО Адсопак®–А и АВО Адсопак®–В специфичны, соответственно, к антителам А и В групп крови. <br>
+                                        Сорбент в колонке АВО Адсопак®–АВ представляет собой смесь сорбентов анти- А и анти-В в равных пропорциях. <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-lg-10 offset-lg-1">
+                           <img src="assets/img/aferez-bg.jpg" alt="">
+                      </div>
+                    </div>
+                </div>
+              </section>
+              
+            </main>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+           <div class="container">
+               <div class="row">
+                   <div class="col-12 col-lg-3">
+                        <div class="footer-logo">
+                            <a href="#">Покард</a>
+                        </div>
+                        <ul class="footer-contats">
+                            <li>
+                                121552, Москва, ул. 3-я Черепковская, д.15а
+                            </li>
+                            <li>
+                                <a href="tel:+74954146815">+ 7(495)414-68-15</a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@pocard.ru">info@pocard.ru</a>
+                            </li>
+                        </ul>
+                   </div>
+                    <div class="col-12 col-lg-3">
+                        <ul class="footer-nav">
+                            <li>
+                                <a href="#">
+                                    Главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    О компании
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Каталог продукции
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <ul class="footer-nav footer-nav_small">
+                            <li>
+                                <a href="#">
+                                    Технологии афереза
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Общие сведения
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Плазмосорбция
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Каскадная плазмофильтрация
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Селективная плазмофильтрация
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-2">
+                        <ul class="footer-nav">
+                            <li>
+                                <a href="#">
+                                    Пациентам
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Врачам
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Новости
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+               </div>
+           </div>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.mousewheel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

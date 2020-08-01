@@ -1,0 +1,14 @@
+.aferez {
+  &-info{
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+  &-list {
+    list-style-type: disc;
+    margin-left: 18px;
+    margin-bottom: 25px;
+    &-item {
+      line-height: 150%;
+    }
+  }
+}
