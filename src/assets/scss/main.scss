@@ -96,7 +96,8 @@ h2, .h2 {
     color: #006DAB;
 }
 h3, .h3{
-    font-size: 24px;
+    font-size: rem(24);
+    color: #006DAB;
 }
 h4, .h4{
     font-size: 18px;
@@ -702,19 +703,23 @@ a strong{
 // ----------------------------------------------------------------------------
 // Link components style
 // ----------------------------------------------------------------------------
-
+// Global
 @import "./components/header";
 @import "./components/menu";
 @import "./components/history";
 
+// Components
 @import "./components/form";
 @import "./components/buttons";
 @import "./components/modals";
+@import "./components/accordion";
 
+// Pages
 @import "./components/contacts";
 @import "./components/product";
 @import "./components/aferez";
 
+// Other
 @import "./components/error404";
 
 // ----------------------------------------------------------------------------

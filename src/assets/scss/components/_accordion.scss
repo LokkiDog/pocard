@@ -1,0 +1,47 @@
+.tab input, .tab-content { display: none; }
+
+.tab {
+  margin-top: 20px;
+  border: 2px solid $warning-color; /* Параметры рамки */
+  margin-bottom: 10px; /* Расстояние между пунктами */
+}
+.tab-title {
+  display: block;
+  width: fit-content;
+  margin-top: -19px;
+  margin-bottom: 26px;
+  margin-left: 15px;
+  padding: 1px 2px 1px;
+  
+  color: #007cc3;
+  font-weight: 700;
+  font-size: 1.66667rem;
+  line-height: 1.66667rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+.tab-title::after {
+  content: "";
+  width: 30px;
+  height: 14px;
+  background: url('../img/arrow-down.png') 50%/contain no-repeat;
+  position: absolute;
+  right: 25px;
+  top: 34px;
+  transition: all 0.2s;
+}
+.tab-content {
+  padding: 10px 20px; /* Поля вокруг текста */
+}
+// .tab :checked + .tab-title {
+  
+// }
+.tab :checked + .tab-title::after {
+  transform: rotate(180deg);
+}
+// .tab :checked ~ .tab-content {
+//   display: block; /* Показываем содержимое */
+// }
+.tab-content--active {
+  display: block;
+}

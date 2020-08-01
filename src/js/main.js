@@ -137,8 +137,24 @@ $(function (){
    
 
     /* 
-    ======== Блок ИЧТОРИЯ на страницк "о компании" ========
+    ======== Аккордеон ========
     */
- 
+   
+    $('input[name="tab-group"]').on("click", function(el){
+        if($(this).prop('checked')) {
+            $(this).parents('.tab').siblings('.tab-content').slideDown();
+        }else {
+            $(this).parents('.tab').siblings('.tab-content').slideUp();
+        }
+    })
+
+    /* 
+    ======== Блок с текстом ПОДРОБНЕЕ (где продукт, реализовано не здесь) ========
+    */
+   $('.textmore__box').on('click', function(){
+       console.log('10');
+       
+       $(this).siblings('.textmore__box-body').toggleClass('textmore__box-body--active');
+   })
 
 });

@@ -2,6 +2,11 @@
   &-info{
     padding-top: 60px;
     padding-bottom: 100px;
+    &--product {
+      &.top-bg-section {
+        background: url('../img/top-bg.jpg') no-repeat bottom right 0px;
+      }
+    }
   }
   &-list {
     list-style-type: disc;
@@ -9,6 +14,54 @@
     margin-bottom: 25px;
     &-item {
       line-height: 150%;
+    }
+  }
+
+  &_product-info {
+    margin-top: 0;
+  }
+
+  .product-info-box{
+    margin-top: 20px;
+    margin-bottom: 0;
+    height: auto;
+  }
+  
+  
+  &_accordion{
+    margin-top: 100px;
+    font-size: rem(16);
+    .h3 {
+      margin-bottom: 15px;
+      margin-top: 25px;
+    }
+  }
+}
+
+
+
+// textmore
+
+.textmore {
+  &__box{
+    cursor: pointer;
+    position: relative;
+    &:after {
+      content: "Подробнее...";
+      position: absolute;
+      font-weight: bold;
+      font-style: italic;
+      right: 25px;
+      bottom: 0px;
+    }
+    &-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.8s;
+      &.textmore__box-body--active {
+        max-height: 9999px;
+        
+      }
     }
   }
 }
