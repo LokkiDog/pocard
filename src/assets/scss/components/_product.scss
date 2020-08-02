@@ -68,10 +68,14 @@
       b{
           font-weight: 500;
       }
+      &--model {
+          padding-left: 8px;
+          padding-right: 8px;
+      }
   }
   &_min{
       .product-info-box__body{
-          max-height: 82px;
+          max-height: 87px;
           transition: max-height 0.5s;
           overflow: hidden;
           position: relative;
@@ -124,9 +128,25 @@
 }
 .model-list{
   &__name{
-      width: 190px;
+      max-width: 190px;
+      width: 100%;
       margin-right: 5px;
+      &--title {
+        font-size: rem(18);
+    }
   }
+  &__capacity {
+      width: 60px;
+      margin-right: 5px;
+      &--title {
+          font-size: rem(18);
+      }
+  }
+  &__volume {
+    &--title {
+        font-size: rem(18);
+    }
+}
 }
 
 .download-list{
