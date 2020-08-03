@@ -96,14 +96,40 @@
               transform: translateX(-50%);
           }
       }
-      &:last-child{
-          .history-item__name{
-              opacity: 0.4;
-          }
+      &:nth-child(9){
+          
           &::before{
               width: 325px;
               transform: translateX(-100%);
+              content: "";
+              display: block;
+              height: 90px;
+              background: url('../img/history-wave.svg') ;
+              z-index: 0;
+              position: absolute;
+              left: 100%;
+              top: 0;
+              transform: translateX(-50%);
           }
+      }
+      &:last-child{
+          overflow: hidden;
+        .history-item__name{
+            opacity: 0.4;
+        }
+        &::before{
+            width: 325px;
+            transform: translateX(-100%);
+            content: "";
+            display: block;
+            height: 90px;
+            background: url('../img/history-line.svg') no-repeat;
+            z-index: 0;
+            position: absolute;
+            left: 100%;
+            top: 73px;
+            transform: translateX(-50%);
+        }
       }
   }
 }

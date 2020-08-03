@@ -232,7 +232,7 @@ a strong{
     }
     &__descr{
         font-weight: 400;
-        font-size: rem(38);
+        font-size: rem(28);
         line-height: 110%;
         top: 44px;
         right: 323px;
@@ -333,7 +333,7 @@ a strong{
 
 .about-item{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 48px;
     text-align: justify;
    
@@ -430,12 +430,15 @@ a strong{
             .article-section-slider__item{
                 max-height: 334px;
                 height: 334px;
+                padding: 15px;
             }
         }
         &_2 {
             .article-section-slider__item {
                 max-height: 378px;
                 height: 378px;
+                padding: 15px;
+
                 img{
                     height: 100%;
                     object-fit: cover;
@@ -538,7 +541,7 @@ a strong{
         font-weight: 700;
         margin-bottom: 10px;
         a{
-            color: $primary-color;
+            color: rgba(128, 182, 213, 0.6);
             transition: all 0.3s;
             @media screen and (max-width: $phoneWidth ) {
                 color: $primary-color-dark ;
@@ -549,17 +552,19 @@ a strong{
         }
         &:hover {
             a{
-                color: $primary-color-dark ;
+                color: $warning-color;
                 text-decoration: none;
                 @media screen and (max-width: $phoneWidth ) {
-                    color: $primary-color ;
+                    color: $warning-color;
                 }
             }
         }
     }
     li.active {
         a{
-            color: #006DAB;
+            color: $warning-color;
+            transform: scale(1.1);
+            
         }
     }
 }
@@ -596,8 +601,8 @@ a strong{
     &-col{
         display: flex;
     }
-    background: #80B6D5;
-    color: #ffffff;
+    background: #fff;
+    color: $mainFontColor;
     align-self: stretch;
     padding: 40px;
     text-align: justify;
