@@ -92,7 +92,7 @@
           .down-btn{
               position: absolute;
               z-index: 1;
-              bottom: 10px;
+              bottom: 5px;
               right: 14px;
               
           }
@@ -122,8 +122,12 @@
   border: 0;
   transition: all 0.3s;
   transform-origin: center;
+  font-style: italic;
+  font-family: $mainFont;
   &_active{
-      transform: rotate(180deg);
+      img {
+        transform: rotate(180deg);
+      }
   }
 }
 .model-list{

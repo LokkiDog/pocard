@@ -23,6 +23,12 @@ $(function (){
     $('.product-info-box_min .down-btn').click(function (){
         $(this).toggleClass('down-btn_active');
         $(this).parent('.product-info-box__body').toggleClass('product-info-box__body_active');
+        
+        if($(this).hasClass('down-btn_active')) {
+            $('.down-btn-text').text('Закрыть');
+        } else {
+            $('.down-btn-text').text('Открыть');
+        }
     });
 
     // Слайдер на страницу о нас
