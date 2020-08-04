@@ -1,9 +1,15 @@
 .tab input, .tab-content { display: none; }
 
 .tab {
-  margin-top: 20px;
+  margin: 20px 10px 10px;
   border: 2px solid $warning-color; /* Параметры рамки */
-  margin-bottom: 10px; /* Расстояние между пунктами */
+  .product-info-box_min {
+    .product-info-box__title,
+    .product-info-box__body {
+      padding: 0;
+    } 
+  }
+  
 }
 .tab-title {
   display: block;
@@ -26,12 +32,12 @@
   height: 14px;
   background: url('../img/arrow-down.png') 50%/contain no-repeat;
   position: absolute;
-  right: 25px;
+  right: 35px;
   top: 34px;
   transition: all 0.2s;
 }
 .tab-content {
-  padding: 10px 20px; /* Поля вокруг текста */
+  padding: 0 10px 20px; /* Поля вокруг текста */
 }
 // .tab :checked + .tab-title {
   
@@ -39,9 +45,9 @@
 .tab :checked + .tab-title::after {
   transform: rotate(180deg);
 }
-// .tab :checked ~ .tab-content {
-//   display: block; /* Показываем содержимое */
-// }
+.tab :checked ~ .tab-content {
+  display: block; /* Показываем содержимое */
+}
 .tab-content--active {
   display: block;
 }

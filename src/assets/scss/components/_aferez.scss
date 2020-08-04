@@ -16,6 +16,17 @@
       line-height: 150%;
     }
   }
+  &-image {
+    width: fit-content;
+    position: relative;
+    &-text {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      font-size: rem(14);
+      font-weight: bold;
+    }
+  }
 
   &_product-info {
     margin-top: 0;
@@ -25,6 +36,22 @@
     margin-top: 20px;
     margin-bottom: 0;
     height: auto;
+    border: none;
+    margin-bottom: 20px;
+    &__title{
+        color: $primary-color;
+        background: #fff;
+        padding: 5px 20px 8px 20px;
+        .h2{
+            font-size: rem(28);
+            color: $primary-color;
+        }
+    }
+    &__body{
+        padding: 16px;
+        position: relative;
+        font-size: rem(16);
+    }
   }
   
   
@@ -42,26 +69,26 @@
 
 // textmore
 
-.textmore {
-  &__box{
-    cursor: pointer;
-    position: relative;
-    &:after {
-      content: "Подробнее...";
-      position: absolute;
-      font-weight: bold;
-      font-style: italic;
-      right: 25px;
-      bottom: 0px;
-    }
-    &-body {
-      max-height: 0;
-      overflow: hidden;
-      transition: all 0.8s;
-      &.textmore__box-body--active {
-        max-height: 9999px;
+// .textmore {
+//   &__box{
+//     cursor: pointer;
+//     position: relative;
+//     &:after {
+//       content: "Подробнее...";
+//       position: absolute;
+//       font-weight: bold;
+//       font-style: italic;
+//       right: 25px;
+//       bottom: 0px;
+//     }
+//     &-body {
+//       max-height: 0;
+//       overflow: hidden;
+//       transition: all 0.8s;
+//       &.textmore__box-body--active {
+//         max-height: 9999px;
         
-      }
-    }
-  }
-}
+//       }
+//     }
+//   }
+// }
