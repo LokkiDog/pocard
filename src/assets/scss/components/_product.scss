@@ -75,7 +75,8 @@
   }
   &_min{
       .product-info-box__body{
-          max-height: 65px;
+        //   max-height: 65px;
+          max-height: calc(1.06667 * 3);
           transition: max-height 0.5s;
           overflow: hidden;
           position: relative;
@@ -139,12 +140,18 @@
       &--title {
         font-size: rem(18);
     }
+    &--akkordeon {
+        width: 160px;
+    }
   }
   &__capacity {
       width: 60px;
       margin-right: 5px;
       &--title {
           font-size: rem(18);
+      }
+      &--akkordeon {
+          width: 100px;
       }
   }
   &__volume {

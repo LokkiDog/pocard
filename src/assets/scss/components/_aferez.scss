@@ -15,7 +15,7 @@
       .product-info-box__title,
       .product-info-box__body {
         padding: 5px 0;
-        max-height: 76px;
+        max-height: calc(18px * 3);
         &.product-info-box__body_active {
           max-height: 99999px;
         }
@@ -69,7 +69,7 @@
         }
     }
     &__body{
-        padding: 16px;
+        // padding: 16px;
         position: relative;
         font-size: rem(16);
     }
@@ -77,7 +77,7 @@
   
   
   &_accordion{
-    margin-top: 100px;
+    margin: 50px 0;
     font-size: rem(16);
     .h3 {
       margin-bottom: 15px;

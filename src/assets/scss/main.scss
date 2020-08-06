@@ -287,7 +287,7 @@ a strong{
     }
     &__title{
         position: absolute;
-        top: -14px;
+        top: -26px;
         background-color: #FFFFFF;
         padding: 0 22px;
         left: 20px;
@@ -723,6 +723,7 @@ a strong{
 @import "./components/contacts";
 @import "./components/product";
 @import "./components/aferez";
+@import "./components/doctors";
 
 // Other
 @import "./components/error404";
