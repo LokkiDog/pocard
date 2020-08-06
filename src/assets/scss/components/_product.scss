@@ -55,7 +55,7 @@
       }
   }
   &__body{
-      padding: 16px;
+      padding: 5px 20px 8px 20px;
       position: relative;
       font-size: rem(16);
       p{
@@ -75,25 +75,26 @@
   }
   &_min{
       .product-info-box__body{
-          max-height: 87px;
+          max-height: 65px;
           transition: max-height 0.5s;
           overflow: hidden;
           position: relative;
-          &::after {
-              content: "";
-              display: block;
-              position: absolute;
-              height: 21px;
-              width: 100%;
-              background: #ffffff;
-              left: 0;
-              bottom: 0;
-          }
+        //   &::after {
+        //       content: "";
+        //       display: block;
+        //       position: absolute;
+        //       height: 21px;
+        //       width: 100%;
+        //       background: transparent;
+        //       left: 0;
+        //       bottom: -10px;
+        //   }
           .down-btn{
               position: absolute;
               z-index: 1;
-              bottom: 5px;
+              bottom: 0px;
               right: 14px;
+              background: #fff;
               
           }
       }

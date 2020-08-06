@@ -146,12 +146,40 @@ $(function (){
     ======== Аккордеон ========
     */
    
-    $('input[name="tab-group"]').on("click", function(el){
-        if($(this).prop('checked')) {
-            $(this).parents('.tab').siblings('.tab-content').slideDown();
-        }else {
-            $(this).parents('.tab').siblings('.tab-content').slideUp();
-        }
+    // $('input[name="tab-group"]').on("click", function(el){
+    //     // Запоминаем prop элемента 
+    //     var currentProp = $(this).prop('checked');
+    //     // Делаем у всех эдементов false(чтобы закрыть)
+    //     $('input[name="tab-group"]').prop('checked',false);
+    //     // Возвращаем нашему элементу prop
+    //     $(this).prop('checked', currentProp);
+
+    //     if($(this).prop('checked')) {
+                
+    //         $(this).siblings('.tab-content').slideDown();
+    //     }else {
+    //         $(this).siblings('.tab-content').slideUp();
+    //     } 
+    // })
+
+     $('input[name="tab-group"]').on("click", function(el){
+        // Запоминаем prop элемента 
+        var currentProp = $(this).prop('checked');
+        // Делаем у всех эдементов false(чтобы закрыть)
+        $('input[name="tab-group"]').prop('checked',false);
+        // Возвращаем нашему элементу prop
+        $(this).prop('checked', currentProp);
+
+        $('input[name="tab-group"]').each(function (){
+            console.log($(this).prop('checked'));
+            
+            if($(this).prop('checked')) {
+                $(this).siblings('.tab-content').slideDown();
+            }else {
+                $(this).siblings('.tab-content').slideUp();
+            } 
+        });
+        
     })
 
     /* 

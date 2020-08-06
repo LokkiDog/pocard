@@ -2,14 +2,7 @@
 
 .tab {
   margin: 20px 10px 10px;
-  border: 2px solid $warning-color; /* Параметры рамки */
-  .product-info-box_min {
-    .product-info-box__title,
-    .product-info-box__body {
-      padding: 0;
-    } 
-  }
-  
+  border: 2px solid $warning-color; /* Параметры рамки */ 
 }
 .tab-title {
   display: block;
@@ -45,9 +38,9 @@
 .tab :checked + .tab-title::after {
   transform: rotate(180deg);
 }
-.tab :checked ~ .tab-content {
-  display: block; /* Показываем содержимое */
-}
-.tab-content--active {
-  display: block;
-}
+// .tab :checked ~ .tab-content {
+//   display: block; /* Показываем содержимое */
+// }
+// .tab-content--active {
+//   display: block;
+// }
