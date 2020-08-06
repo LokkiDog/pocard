@@ -25,7 +25,7 @@ function generateHtmlPlugins (templateDir) {
 }
 // Call our function on our views directory.
 const htmlPlugins = generateHtmlPlugins('../src/template/views')
-const htmlPlugins2 = generateHtmlPlugins('../src/template/aferez')
+// const htmlPlugins2 = generateHtmlPlugins('../src/template/aferez')
 
 
 const PATHS = {
@@ -176,5 +176,5 @@ module.exports = {
     // })
   ]
   .concat(htmlPlugins)
-  .concat(htmlPlugins2)
+  // .concat(htmlPlugins2)
 }

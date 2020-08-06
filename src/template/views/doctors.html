@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <title>Pocard</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <!-- Header -->
+           <!-- Header -->
+           <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="search header__search">
+                                <form action="#" class="search-form">
+                                    <input type="text"> 
+                                    <button>
+                                        <img src="assets/img/ico-search.svg" alt="search">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-5 offset-lg-3">
+                            <div class="header__info">
+                                <div class="link-phone">
+                                    <img src="assets/img/ico-phone.svg" alt="Pohne">
+                                    <a href="tel:+74954146815">+ 7(495)414-68-15</a>
+                                </div>
+                                <div class="link-question">
+                                    <img src="assets/img/ico-circle.svg" alt="Circle">
+                                    <a class="open-modal-form" href="#">Задать вопрос</a>
+                                </div>
+                                <ul class="lang">
+                                    <li class="lang-active">
+                                        <a href="#">
+                                            Ru
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            En
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-1 header__menu">
+                            <a href="#" class="logo">
+                                <img src="assets/img/logo.svg" alt="Pocard">
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-11">
+                            <nav class="header__nav nav">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            О компании
+                                        </a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">
+                                            Каталог продукции
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">
+                                                    Подменю
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Подменю ПодменюПодменюПодменю
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">
+                                            Технологии афереза
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">
+                                                    Подменю
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Подменю
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Информация для пациентов
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Библиотека для профессионалов
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="header_mob">
+            <div class="header_mob-top">
+                <div class="container-fluid">
+                    <div class="row no-gutters align-items-center">
+
+                        <!-- logo -->
+                        <div class="col-10 col-sm-2 col-md-1 header_mob__menu">
+                          <a href="#" class="logo">
+                              <img src="assets/img/logo.svg" alt="Pocard">
+                          </a>
+                        </div>
+                        <!-- search -->
+                        <div class="d-none d-md-block col-md-4">
+                            <div class="search header_mob__search">
+                                <form action="#" class="search-form">
+                                    <input type="text"> 
+                                    <button>
+                                        <img src="assets/img/ico-search.svg" alt="search">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- info -->
+                        <div class="d-none d-sm-block col-sm-9 col-md-6">
+                            <div class="header_mob__info">
+                                <div class="link-phone">
+                                    <img src="assets/img/ico-phone.svg" alt="Pohne">
+                                    <a href="tel:+74954146815">+ 7(495)414-68-15</a>
+                                </div>
+                                <div class="link-question">
+                                    <img src="assets/img/ico-circle.svg" alt="Circle">
+                                    <a class="open-modal-form" href="#">Задать вопрос</a>
+                                </div>
+                                <ul class="lang">
+                                    <li class="lang-active">
+                                        <a href="#">
+                                            Ru
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            En
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- burger -->
+                        <div class="col-2 col-sm-1">
+                          <div class="burger header_mob__burger" id="burger">
+                            <input type="checkbox" />
+                            <span id="burger-span1"></span>
+                            <span id="burger-span2"></span>
+                            <span id="burger-span3"></span>
+                          </div>
+                          <!-- /.burger header_mob__burger -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header_mob -->
+        <menu class="mob-menu menu-closed" id="mob-menu">
+            <ul class="mob-menu-ul-1">
+              <li class="mob-menu-li">
+                  <a href="#" class="mob-menu-a">О компании</a>
+              </li>
+              <li class="mob-menu-li menu-item-has-children">
+                  <a href="#" class="mob-menu-a ">Каталог продукции</a>
+                  <ul class="mob-menu-ul-2 sub-menu-mob">
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">Общая информация</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">АВО Адсопарк</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">2</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">3</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="mob-menu-li menu-item-has-children">
+                  <a href="#" class="mob-menu-a">Технологиии афереза</a>
+                  <ul class="mob-menu-ul-2 sub-menu-mob">
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">Общая информация</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">АВО Адсопарк</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">Информация для пациентов</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">Библиотека для профессионалов</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">Контакты</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="mob-menu-li">
+                  <a href="#" class="mob-menu-a">нформация для пациентов</a>
+              </li>
+              <li class="mob-menu-li">
+                  <a href="#" class="mob-menu-a">Библиотека для профессионалов</a>
+              </li>
+              <li class="mob-menu-li">
+                  <a href="#" class="mob-menu-a">Контакты</a>
+              </li>
+            </ul>
+            <div class="info mob-menu_info">
+                <div class="link-phone">
+                    <img src="assets/img/ico-phone.svg" alt="Pohne">
+                    <a href="tel:+74954146815">+ 7(495)414-68-15</a>
+                </div>
+                <div class="link-question">
+                    <img src="assets/img/ico-circle.svg" alt="Circle">
+                    <a class="open-modal-form" href="#">Задать вопрос</a>
+                </div>
+                <ul class="lang">
+                    <li class="lang-active">
+                        <a href="#">
+                            Ru
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            En
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </menu>
+        <!-- /.mob-menu -->
+
+            <main>
+              <section class="doctors top-bg-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 ">
+                            <h2 class="h2 section-title">
+                              Информация для пациентов
+                            </h2>
+                            <p>
+                              Терапевтический аферез (от греч. «apheresis» - удаление) – современная медицинская процедура, применяемая для лечения широкого спектра заболеваний. 
+                            </p>
+                            <p>
+                              Суть данного метода заключается в удалении вредных компонентов из системного кровотока организма. 
+                              В процессе процедуры кровь пациента выводится из организма и пропускается через высокотехнологичное медицинское изделие, в котором происходит необратимое связывание только вредных веществ. После этого очищенная кровь возвращается обратно в системный кровоток больного.
+                            </p>
+                            <p> 
+                              Необходимость проведения процедур терапевтического афереза, как правило, возникает в случаях, когда другие виды терапии отсутствуют, недостаточно эффективны или не могут быть использованы. Кроме того, существует ряд заболеваний, при которых данный вид лечения является единственным, так называемое «лечение выбора».
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              </section>
+              <section class="doctors doctors-info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 box-border box-border--black">
+                          <div class="list list--ol list--bordered">
+                            <h3 class="list-title box-border__title box-border__title--list">
+                              Что нужно знать о терапевтическом аферезе:
+                            </h3>
+                            <ol class="list-ol">
+                              <li class="list-li">
+                                Существует множество процедур терапевтического афереза, а их спектр применения очень широк.
+                              </li>
+                              <li class="list-li">
+                                Решение о необходимости использования терапевтического афереза, вида процедуры, дизайна лечения принимается лечащим врачом.
+                              </li>
+                              <li class="list-li">
+                                Терапевтический аферез – лечение, которое проводится только в специализированных медицинских учреждениях, оснащенных необходимым оборудованием и имеющих персонал высокой квалификации с опытом работы в данной области.
+                              </li>
+                              <li class="list-li">
+                                Количество медицинских центров, предоставляющих данную услугу, ограничено.
+                              </li>
+                            </ol>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </section>
+
+              <section class="doctors doctors-clinics">
+                <div class="container">
+                  <div class="row">
+                      <div class="col-12">
+                        <div class="doctors-clinics_image">
+                          <img src="../assets/img/doctors.jpg" alt="">
+                        </div>
+                        <p class="doctors-clinics_text">
+                          Для получения данного вида медицинской помощи Вы можете обратиться в следующие <br>
+                          клиники, использующие методы терапевтического афереза для лечения пациентов:
+                        </p >
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="doctors-clinics_clinics clinics">
+                        <a href="#" class="clinics-clinic clinics-link open-modal-clinics">
+                          <div class="clinics-text">
+                            ГБУЗ Московский Клинический Научный Центр имени А.С. Логинова ДЗМ
+                          </div>
+                          <button class="btn btn--clinics clinics-btn">Смотреть</button >
+                        </a>
+                        <a href="#" class="clinics-clinic clinics-link open-modal-clinics">
+                          <div class="clinics-text">
+                            Инфекционная клиническая больница №2 ДЗМ 
+                          </div>
+                          <button class="btn btn--clinics clinics-btn">Смотреть</button >
+                        </a>
+                        <a href="#" class="clinics-clinic clinics-link open-modal-clinics">
+                          <div class="clinics-text">
+                            ФГБУ «Клиническая больница №1» (Волынская) Управления делами Президента РФ
+                          </div>
+                          <button class="btn btn--clinics clinics-btn">Смотреть</button >
+                        </a>
+                        <a href="#" class="clinics-clinic clinics-link open-modal-clinics">
+                          <div class="clinics-text">
+                            РДКБ ФГАОУ ВО РНИМУ им. Н.И. Пирогова Минздрава России
+                          </div>
+                          <button class="btn btn--clinics clinics-btn">Смотреть</button >
+                        </a>
+                        <a href="#" class="clinics-clinic clinics-link open-modal-clinics">
+                          <div class="clinics-text">
+                            ГБУЗ «Городская клиническая больница им. С.С. Юдина ДЗМ»
+                          </div>
+                          <button class="btn btn--clinics clinics-btn">Смотреть</button >
+                        </a>
+                        <a href="#" class="clinics-clinic clinics-link open-modal-clinics">
+                          <div class="clinics-text">
+                            ГБУЗ «Городская клиническая больница им. С.С. Юдина ДЗМ»
+                          </div>
+                          <button class="btn btn--clinics clinics-btn">Смотреть</button >
+                        </a>
+                        <a href="#" class="clinics-clinic clinics-link open-modal-clinics">
+                          <div class="clinics-text">
+                            Медицинский центр СМ-Клиник
+                          </div>
+                          <button class="btn btn--clinics clinics-btn">Смотреть</button >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+            </main>
+        </div>
+        <!-- Footer -->
+        <div class="modal modal--clinic closed" id="modal-clinic">
+          <div class="modal-area">
+              <div class="modal-table">
+                <div class="modal-row">
+                  <div class="modal-denomination">
+                    Наименование клиники
+                  </div>
+                  <p class="modal-value">
+                    ГБУЗ Московский Клинический Научный Центр имени А.С. Логинова ДЗМ
+                  </p>
+                </div>
+                <div class="modal-row">
+                  <div class="modal-denomination">
+                    Адрес
+                  </div>
+                  <p class="modal-value">
+                    г. Москва, шоссе Энтузиастов, 86
+                  </p>
+                </div>
+                <div class="modal-row">
+                  <div class="modal-denomination">
+                    Контактный телефон
+                  </div>
+                  <p class="modal-value">
+                    8 (495) 304 30 39
+                  </p>
+                </div>
+
+                <div class="modal-row">
+                  <div class="modal-denomination">
+                    Контактный телефон
+                  </div>
+                  <p class="modal-value">
+                    8 (495) 304 30 39
+                  </p>
+                </div>
+
+                <div class="modal-row">
+                  <div class="modal-denomination">
+                    Контактный телефон
+                  </div>
+                  <p class="modal-value">
+                    8 (495) 304 30 39
+                  </p>
+                </div>
+
+                <div class="modal-row">
+                  <div class="modal-denomination">
+                    Контактный телефон
+                  </div>
+                  <p class="modal-value">
+                    8 (495) 304 30 39
+                  </p>
+                </div>
+                <div class="modal-row">
+                  <div class="modal-denomination">
+                    Контактный телефон
+                  </div>
+                  <p class="modal-value">
+                    8 (495) 304 30 39
+                  </p>
+                </div>
+                <div class="modal-row">
+                  <div class="modal-denomination">
+                    Контактный телефон
+                  </div>
+                  <p class="modal-value">
+                    8 (495) 304 30 39
+                  </p>
+                </div>
+                <div class="modal-row">
+                  <div class="modal-denomination">
+                    Контактный телефон
+                  </div>
+                  <p class="modal-value">
+                    8 (495) 304 30 39
+                  </p>
+                </div>
+              </div>
+              <div class="close modal-close"></div>
+          </div>
+        </div>
+        <!-- /.modal modal--clinics -->
+
+
+        <footer class="footer">
+           <div class="container">
+               <div class="row">
+                   <div class="col-12 col-lg-3">
+                        <div class="footer-logo">
+                            <a href="#">Покард</a>
+                        </div>
+                        <ul class="footer-contats">
+                            <li>
+                                121552, Москва, ул. 3-я Черепковская, д.15а
+                            </li>
+                            <li>
+                                <a href="tel:+74954146815">+ 7(495)414-68-15</a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@pocard.ru">info@pocard.ru</a>
+                            </li>
+                        </ul>
+                   </div>
+                    <div class="col-12 col-lg-3">
+                        <ul class="footer-nav">
+                            <li>
+                                <a href="#">
+                                    Главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    О компании
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Каталог продукции
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <ul class="footer-nav footer-nav_small">
+                            <li>
+                                <a href="#">
+                                    Технологии афереза
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Общие сведения
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Плазмосорбция
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Каскадная плазмофильтрация
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Селективная плазмофильтрация
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-2">
+                        <ul class="footer-nav">
+                            <li>
+                                <a href="#">
+                                    Пациентам
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Врачам
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Новости
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+               </div>
+           </div>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.mousewheel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

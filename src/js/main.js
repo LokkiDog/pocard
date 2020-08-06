@@ -122,6 +122,10 @@ $(function (){
    $('.open-modal-thanks').on("click",function (e) {
         $('#modal-thanks').removeClass('closed'); 
     })
+    $('.open-modal-clinics').on("click",function (e) {
+        e.preventDefault();
+        $('#modal-clinic').removeClass('closed'); 
+    })
    
     /* 
     ======== Мобильно меню ========

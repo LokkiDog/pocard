@@ -127,7 +127,7 @@ a strong{
 
 .top-bg-section{
     padding: 40px 0;
-    background: url('../img/top-bg.jpg') no-repeat right -140px; 
+    background: url('../img/top-bg.jpg') no-repeat right bottom; 
     @media screen and (max-width: $phoneWidth  ){
         background: #fff; 
     }
@@ -285,17 +285,19 @@ a strong{
     @media screen and (max-width: $phoneWidth  ){
         padding: 40px 20px 20px 20px
     }
+   
     &__title{
         position: absolute;
         top: -26px;
         background-color: #FFFFFF;
         padding: 0 22px;
         left: 20px;
+        line-height: 16px;
         @media screen and (max-width: $phoneWidth  ){
             font-size: rem(38);
             top: -20px;
             padding: 0 22px;
-            left: 0px;
+            left: 1px;
             max-width: 340px;
         }
         @media screen and (max-width: 367px  ){
@@ -310,6 +312,32 @@ a strong{
     &_justify{
         p{
             text-align: justify;
+        }
+    }
+
+
+    &.box-border--black {
+        margin-left: 15px;
+        padding: 20px 40px;
+        @media screen and (max-width: $phoneWidth) {
+            margin-left: 0;
+            margin: auto;
+            max-width: 98%;
+        }
+        .box-border{
+            &__title{
+                color: #000;
+                top: -14px;
+                line-height: rem(30);
+                @media screen and (max-width: $phoneWidth) {
+                    max-width: 98%;
+                    font-size: rem(26);
+                    line-height: rem(28);
+                }
+                @media screen and (max-width: 340px) {
+                    top: -41px
+                }
+            }
         }
     }
 }

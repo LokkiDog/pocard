@@ -1,0 +1,68 @@
+.doctors {
+  &-info {
+    margin-top: 50px;
+  }
+  &-clinics {
+    margin-top: 60px;
+    &_text {
+      margin-top: 60px;
+      font-size: rem(16);
+      line-height: rem(18);
+    }
+    &_clinics {
+      margin-top: 60px;
+    }
+  }
+  
+}
+// Список ol
+.list {
+  font-size: rem(14);
+  line-height: rem(16);
+  &-ol {
+    list-style: disc;
+  }
+  &-li {
+    margin: 10px 0;
+  }
+}
+
+// Блок с клиниками
+
+.clinics {
+  margin-bottom: 100px;
+  font-weight: 500;
+  font-size: rem(16);
+  &-clinic {
+    @include flex(row, space-between, flex-start);
+    margin-top: 10px;
+  }
+  &-text {
+    padding-right: 10px;
+  }
+}
+
+
+// Модальное окно клиники
+
+.modal.modal--clinic{
+  .modal{
+    &-table{}
+    &-row{
+      @include flex;
+      width: 100%;
+      font-size: rem(18);
+      line-height: rem(21);
+    }
+    &-denomination{
+      width: 250px;
+      color: $primary-color;
+
+    }
+    &-value{
+      text-align: left;
+      // padding-left: 55px;
+      color: #000;
+    }
+  }
+}
