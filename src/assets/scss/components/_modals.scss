@@ -7,21 +7,43 @@
   right: 0;
   background: rgba(0,0,0,0.7);
   overflow-y: scroll;
+  z-index: 100;
   &-area {
     @include flex(column, center, center);
     position: relative;
     max-width: 1030px;
     width: 100%;
     min-height: 475px;
+    max-height: 85%;
     background: #fff;
+    overflow-y: scroll;
+    @media screen and (max-width: $smDesktopWidth + 50px ){
+      max-width: 95%;
+      padding: 55px 20px 10px;
+    }
   }
   &--form {
     .modal {
       &-area {
         padding: 54px 10px;
       }
+      &-form {
+        @media screen and (max-width: $phoneWidth){
+          max-width: 90%;
+          width: 100%;
+          margin: auto;
+        }
+      }
+      &-input {
+        @media screen and (max-width: $phoneWidth){
+          width: 100%;
+        }
+      }
       &-btn {
         margin-top: 30px;
+        @media screen and (max-width: $phoneWidth){
+          width: 100%;
+        }
       }
     }
   }
@@ -68,3 +90,46 @@
     transform: rotate(-45deg);
   }
 }
+
+
+// Модальное окно клиники
+
+.modal.modal--clinic{
+  .modal{
+    &-area {
+      overflow: hidden;
+    }
+    &-table{
+      max-height: 80%;
+      overflow-y: scroll;
+      @media screen and (max-width: $phoneWidth){
+        padding: 15px 20px;
+      }
+    }
+    &-row{
+      @include flex;
+      width: 100%;
+      font-size: rem(18);
+      line-height: rem(21);
+      @media screen and (max-width: $phoneWidth){
+        @include flex(column);
+        margin-top: 2px;
+      }
+    }
+    &-denomination{
+      min-width: 250px;
+      width: 250px;
+      color: $primary-color;
+      
+
+    }
+    &-value{
+      text-align: left;
+      color: #000;
+      @media screen and (max-width: $phoneWidth){
+        margin-top: 10px;
+      }
+    }
+  }
+}
+

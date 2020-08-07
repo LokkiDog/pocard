@@ -43,26 +43,3 @@
 }
 
 
-// Модальное окно клиники
-
-.modal.modal--clinic{
-  .modal{
-    &-table{}
-    &-row{
-      @include flex;
-      width: 100%;
-      font-size: rem(18);
-      line-height: rem(21);
-    }
-    &-denomination{
-      width: 250px;
-      color: $primary-color;
-
-    }
-    &-value{
-      text-align: left;
-      // padding-left: 55px;
-      color: #000;
-    }
-  }
-}

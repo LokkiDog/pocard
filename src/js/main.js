@@ -108,6 +108,7 @@ $(function (){
    $('.modal-close, .modal').on("click", function (e) {
        e.preventDefault();
        $(this).closest('.modal').addClass('closed');
+       $('html').css('overflow','auto');
 
    })
     // Отменяем нажатие на родителя при клике на модалку
@@ -118,13 +119,18 @@ $(function (){
    // Открытие модальных окон
    $('.open-modal-form').on("click",function (e) {
         $('#modal-form').removeClass('closed');
+        $('html').css('overflow','hidden');
    })
    $('.open-modal-thanks').on("click",function (e) {
         $('#modal-thanks').removeClass('closed'); 
+        $('html').css('overflow','hidden');
+
     })
     $('.open-modal-clinics').on("click",function (e) {
         e.preventDefault();
         $('#modal-clinic').removeClass('closed'); 
+        $('html').css('overflow','hidden');
+
     })
    
     /* 
