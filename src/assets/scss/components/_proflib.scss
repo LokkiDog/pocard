@@ -1,0 +1,27 @@
+.proflib {
+  &-title {
+    margin-top: 42px;
+    margin-bottom: 48px;
+  }
+   
+
+  &_accordion {
+    .tab{
+      margin: 20px 0;
+    }
+    .tab-title{
+      color: $primary-color-dark;
+    }
+  }
+  &_news{
+    margin-bottom: 100px;
+  }
+}
+
+.instructions {
+  &-title {
+    color: #000;
+    font-size: rem(18);
+    padding-left: 10px;
+  }
+}

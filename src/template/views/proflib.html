@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <title>Pocard</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+           <!-- Header -->
+           <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="search header__search">
+                                <form action="#" class="search-form">
+                                    <input type="text"> 
+                                    <button>
+                                        <img src="assets/img/ico-search.svg" alt="search">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-5 offset-lg-3">
+                            <div class="header__info">
+                                <div class="link-phone">
+                                    <img src="assets/img/ico-phone.svg" alt="Pohne">
+                                    <a href="tel:+74954146815">+ 7(495)414-68-15</a>
+                                </div>
+                                <div class="link-question">
+                                    <img src="assets/img/ico-circle.svg" alt="Circle">
+                                    <a class="open-modal-form" href="#">Задать вопрос</a>
+                                </div>
+                                <ul class="lang">
+                                    <li class="lang-active">
+                                        <a href="#">
+                                            Ru
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            En
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-1 header__menu">
+                            <a href="#" class="logo">
+                                <img src="assets/img/logo.svg" alt="Pocard">
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-11">
+                            <nav class="header__nav nav">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            О компании
+                                        </a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">
+                                            Каталог продукции
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">
+                                                    Подменю
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Подменю ПодменюПодменюПодменю
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">
+                                            Технологии афереза
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">
+                                                    Подменю
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Подменю
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Информация для пациентов
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Библиотека для профессионалов
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="header_mob">
+            <div class="header_mob-top">
+                <div class="container-fluid">
+                    <div class="row no-gutters align-items-center">
+
+                        <!-- logo -->
+                        <div class="col-10 col-sm-2 col-md-1 header_mob__menu">
+                          <a href="#" class="logo">
+                              <img src="assets/img/logo.svg" alt="Pocard">
+                          </a>
+                        </div>
+                        <!-- search -->
+                        <div class="d-none d-md-block col-md-4">
+                            <div class="search header_mob__search">
+                                <form action="#" class="search-form">
+                                    <input type="text"> 
+                                    <button>
+                                        <img src="assets/img/ico-search.svg" alt="search">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- info -->
+                        <div class="d-none d-sm-block col-sm-9 col-md-6">
+                            <div class="header_mob__info">
+                                <div class="link-phone">
+                                    <img src="assets/img/ico-phone.svg" alt="Pohne">
+                                    <a href="tel:+74954146815">+ 7(495)414-68-15</a>
+                                </div>
+                                <div class="link-question">
+                                    <img src="assets/img/ico-circle.svg" alt="Circle">
+                                    <a class="open-modal-form" href="#">Задать вопрос</a>
+                                </div>
+                                <ul class="lang">
+                                    <li class="lang-active">
+                                        <a href="#">
+                                            Ru
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            En
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- burger -->
+                        <div class="col-2 col-sm-1">
+                          <div class="burger header_mob__burger" id="burger">
+                            <input type="checkbox" />
+                            <span id="burger-span1"></span>
+                            <span id="burger-span2"></span>
+                            <span id="burger-span3"></span>
+                          </div>
+                          <!-- /.burger header_mob__burger -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header_mob -->
+        <menu class="mob-menu menu-closed" id="mob-menu">
+            <ul class="mob-menu-ul-1">
+              <li class="mob-menu-li">
+                  <a href="#" class="mob-menu-a">О компании</a>
+              </li>
+              <li class="mob-menu-li menu-item-has-children">
+                  <a href="#" class="mob-menu-a ">Каталог продукции</a>
+                  <ul class="mob-menu-ul-2 sub-menu-mob">
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">Общая информация</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">АВО Адсопарк</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">2</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">3</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="mob-menu-li menu-item-has-children">
+                  <a href="#" class="mob-menu-a">Технологиии афереза</a>
+                  <ul class="mob-menu-ul-2 sub-menu-mob">
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">Общая информация</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">АВО Адсопарк</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">Информация для пациентов</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">Библиотека для профессионалов</a>
+                      </li>
+                      <li class="mob-menu-li">
+                          <a href="" class="mob-menu-a">Контакты</a>
+                      </li>
+                  </ul>
+              </li>
+              <li class="mob-menu-li">
+                  <a href="#" class="mob-menu-a">нформация для пациентов</a>
+              </li>
+              <li class="mob-menu-li">
+                  <a href="#" class="mob-menu-a">Библиотека для профессионалов</a>
+              </li>
+              <li class="mob-menu-li">
+                  <a href="#" class="mob-menu-a">Контакты</a>
+              </li>
+            </ul>
+            <div class="info mob-menu_info">
+                <div class="link-phone">
+                    <img src="assets/img/ico-phone.svg" alt="Pohne">
+                    <a href="tel:+74954146815">+ 7(495)414-68-15</a>
+                </div>
+                <div class="link-question">
+                    <img src="assets/img/ico-circle.svg" alt="Circle">
+                    <a class="open-modal-form" href="#">Задать вопрос</a>
+                </div>
+                <ul class="lang">
+                    <li class="lang-active">
+                        <a href="#">
+                            Ru
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            En
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </menu>
+        <!-- /.mob-menu -->
+
+
+
+
+
+            <main>
+                <section class="proflib proflib_accordion accordion">
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-12">
+                            <h1 class="h2 proflib-title">
+                              Библиотека для профессионалов 
+                            </h1>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="tab ">
+                                    <input type="checkbox" id="tab1" name="tab-group">
+                                    <label for="tab1" class="tab-title">Инструкции по применению</label> 
+                                    <section class="tab-content"> 
+
+                                      <div class="instructions proflib_instructions">
+                                        <div class="instructions-block">
+                                          <h3 class="instructions-title">
+
+                                          </h3>
+                                          <ul class="download-list">
+                                            <li class="download-list-li">
+                                              <a href="" class="download-list-a">
+                                                <img src="assets/img/ico-pdf.svg" alt="PDF">
+                                                <p >
+                                                    Инструкция по применению Колонок АВО Адсопак®
+                                                </p>
+                                                <span>Скачать</span>
+                                              </a>
+                                            </li>
+                                            <li class="download-list-li">
+                                              <a href="" class="download-list-a">
+                                                <img src="assets/img/ico-pdf.svg" alt="PDF">
+                                                <p>
+                                                    Инструкция по применению Колонок АВО Адсопак®
+                                                </p>
+                                                <span>Скачать</span>
+                                              </a>
+                                            </li>
+                                            <li class="download-list-li">
+                                              <a href="" class="download-list-a">
+                                                <img src="assets/img/ico-pdf.svg" alt="PDF">
+                                                <p>
+                                                    Инструкция по применению Колонок АВО Адсопак®
+                                                </p>
+                                                <span>Скачать</span>
+                                              </a>
+                                            </li>
+                                            <li class="download-list-li">
+                                              <a href="" class="download-list-a">
+                                                <img src="assets/img/ico-pdf.svg" alt="PDF">
+                                                <p>
+                                                    Инструкция по применению Колонок АВО Адсопак®
+                                                </p>
+                                                <span>Скачать</span>
+                                              </a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <!-- /.instructions -->
+
+                                    </section> 
+                                </div> 
+                                <!-- /.tab -->
+                            </div>
+                            <div class="col-12">
+                                <div class="tab">
+                                    <input type="checkbox" id="tab2" name="tab-group">
+                                    <label for="tab2" class="tab-title">Научные публикации (обзорные статьи, клинический опыт применения)</label> 
+                                    <section class="tab-content"> 
+
+                                      <div class="instructions instructions proflib_instructions">
+                                        <div class="instructions-block">
+                                          <h3 class="instructions-title">
+                                            ЛНП аферез
+                                          </h3>
+                                          <ul class="download-list download-list--publications">
+                                            <li class="download-list-li">
+                                              <a href="" class="download-list-a">
+                                                <img src="assets/img/ico-pdf.svg" alt="PDF">
+                                                <p>
+                                                  Bambauer R. Low-density lipoprotein apheresis: Clinical results with different methods // Artif.
+                                                  Organs. – 2002 – Vol. 26, N 2 – P.133-139.
+                                                </p>
+                                                <span>Скачать</span>
+                                              </a>
+                                            </li>
+                                            <li class="download-list-li">
+                                              <a href="" class="download-list-a">
+                                                <img src="assets/img/ico-pdf.svg" alt="PDF">
+                                                <p>
+                                                  Bambauer R., Schiel R., Latza R. Low-density lipoprotein apheresis: An overview // Ther. Apher. –
+                                                  2003 – Vol. 7, N 4 –P.382-390.
+                                                </p>
+                                                <span>Скачать</span>
+                                              </a>
+                                            </li>
+                                            <li class="download-list-li">
+                                              <a href="" class="download-list-a">
+                                                <img src="assets/img/ico-pdf.svg" alt="PDF">
+                                                <p>
+                                                    
+                                                  
+                                                  Blaha M., Lanska M., Blaha V. et al. Pregnancy in homozygous familial hypercholesterolemia -
+                                                  Importance of LDL-apheresis // Atheroscler. Suppl. – 2015 – Vol. 18 – P.134-139.
+                                                  
+                                                </p>
+                                                <span>Скачать</span>
+                                              </a>
+                                            </li>
+                                            <li class="download-list-li">
+                                              <a href="" class="download-list-a">
+                                                <img src="assets/img/ico-pdf.svg" alt="PDF">
+                                                <p>
+                                                    
+                                                  Bláha M., Cermanová M., Bláha V. et al. Safety and tolerability of long lasting LDL-apheresis in
+                                                  familial hyperlipoproteinemia // Ther. Apher. Dial. – 2007 – Vol. 11, N 1 – P.9-15.
+                                     
+                                                </p>
+                                                <span>Скачать</span>
+                                              </a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <!-- /.instructions -->
+                                    </section> 
+                                </div> 
+                                
+                            </div>
+                            <div class="col-12">
+                                <div class="tab">
+                                    <input type="checkbox" id="tab3" name="tab-group">
+                                    <label for="tab3" class="tab-title">Полезные ссылки для скачивания</label>
+                                    <section class="tab-content">
+                                      <div class="instructions instructions proflib_instructions">
+                                        <div class="instructions-block">
+                                          <h3 class="instructions-title">
+                                            ЛНП аферез
+                                          </h3>
+                                          <ul class="download-list download-list--helplinks">
+                                            <li class="download-list-li">
+                                              <a href="" class="download-list-a">
+                                                <img src="assets/img/ico-pdf.svg" alt="PDF">
+                                                <p class="download-list-text">
+                                                  Терминология в области экстракорпоральной гемокоррекции, утвержденная
+                                                  «Национальным обществом специалистов в области гемафереза и экстракорпоральной
+                                                  гемокоррекции», 2016:
+                                                  <span class="download-list-text--right">
+                                                    Экстракорпоральная гемокоррекция: терминология, языковые соответствия, 2016
+                                                  </span>
+                                                  
+                                                                        
+                                                </p>
+                                                <span>Скачать</span>
+                                              </a>
+                                            </li>
+                                            <li class="download-list-li">
+                                              <a href="" class="download-list-a">
+                                                <img src="assets/img/ico-pdf.svg" alt="PDF">
+                                                <p class="download-list-text">
+                                                  Терминология в области экстракорпоральной гемокоррекции, утвержденная
+                                                  «Национальным обществом специалистов в области гемафереза и экстракорпоральной
+                                                  гемокоррекции», 2016:
+                                                  <span class="download-list-text--right">
+                                                    Экстракорпоральная гемокоррекция: терминология, языковые соответствия, 2016
+                                                  </span>
+                                                  
+                                                                        
+                                                </p>
+                                                <span>Скачать</span>
+                                              </a>
+                                            </li>
+                                            
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <!-- /.instructions -->
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- / -->
+                <section class="proflib proflib_news">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+                        <h2 class="h2 proflib-title">
+                          Новости
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="row justify-content-lg-between ">
+                      <div class="col-12 col-sm-6 col-md-4">
+                          <div class="article-card">
+                              <h2 class="h2 article-card__title">
+                                  <a href="#">
+                                      Non, semper turpis commodo diam
+                                  </a>
+                              </h2>
+                              <div class="article-card__date">
+                                  12 января 2020
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                          <div class="article-card">
+                              <h2 class="h2 article-card__title">
+                                  <a href="#">
+                                      Non, semper turpis commodo diam
+                                  </a>
+                              </h2>
+                              <div class="article-card__date">
+                                  12 января 2020
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                          <div class="article-card">
+                              <h2 class="h2 article-card__title">
+                                  <a href="#">
+                                      Non, semper turpis commodo diam
+                                  </a>
+                              </h2>
+                              <div class="article-card__date">
+                                  12 января 2020
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+            </main>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+           <div class="container">
+               <div class="row">
+                   <div class="col-12 col-lg-3">
+                        <div class="footer-logo">
+                            <a href="#">Покард</a>
+                        </div>
+                        <ul class="footer-contats">
+                            <li>
+                                121552, Москва, ул. 3-я Черепковская, д.15а
+                            </li>
+                            <li>
+                                <a href="tel:+74954146815">+ 7(495)414-68-15</a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@pocard.ru">info@pocard.ru</a>
+                            </li>
+                        </ul>
+                   </div>
+                    <div class="col-12 col-lg-3">
+                        <ul class="footer-nav">
+                            <li>
+                                <a href="#">
+                                    Главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    О компании
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Каталог продукции
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <ul class="footer-nav footer-nav_small">
+                            <li>
+                                <a href="#">
+                                    Технологии афереза
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Общие сведения
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Плазмосорбция
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Каскадная плазмофильтрация
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Селективная плазмофильтрация
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-2">
+                        <ul class="footer-nav">
+                            <li>
+                                <a href="#">
+                                    Пациентам
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Врачам
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Новости
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+               </div>
+           </div>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.mousewheel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

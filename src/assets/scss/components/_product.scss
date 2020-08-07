@@ -76,7 +76,7 @@
   &_min{
       .product-info-box__body{
         //   max-height: 65px;
-          max-height: calc(1.06667 * 3);
+          max-height: calc(1.06667rem * 3);
           transition: max-height 0.5s;
           overflow: hidden;
           position: relative;
@@ -162,20 +162,86 @@
 }
 
 .download-list{
-  li{
+  &-li{
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      img{
-          margin-right: 10px;
-          flex-shrink: 0;
+      font-size: rem(14);
+      padding: 0 10px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      
+  }
+  &-a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-items: flex-start;
+    width: 100%;
+    
+    line-height: rem(16);
+    &:hover {
+        text-decoration: none;
       }
-      p{
-          margin-bottom: 0;
-      }
-      a{
-          color: #006DAB;
-          margin-left: auto;
-      }
+    @media screen and (max-width: $tableWidth)  {
+        font-size: rem(16);
+    }
+    img{
+        margin-right: 10px;
+        flex-shrink: 0;
+        width: 20px;
+    }
+    p{
+        display: block;
+        padding-right: 10px;
+        width: 85%;
+        margin-bottom: 0;
+        color: #000;
+        &:hover {
+            text-decoration: underline;
+        }
+        .download-list-text--right {
+            display: block;
+            -ms-flex-item-align: end;
+            align-self: flex-end;
+            text-align: right;
+            margin-right: auto;
+            width: 100%;
+            margin-top: 15px;
+            font-style: italic;
+            padding-right: 0;
+        }
+    } 
+    span {
+        width: 15%;
+        &:hover {
+            text-decoration: underline;
+        }
+        
+    }
+  }
+
+  &.download-list--publications {
+    .download-list {
+        &-a{
+            p {
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+  }
+  &.download-list--helplinks{
+    .download-list {
+        &-a{
+            align-items: flex-start;
+            p {
+                text-align: justify;
+                padding-right: 150px
+            }
+        }
+    }
   }
 }
