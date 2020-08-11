@@ -45,7 +45,7 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4{
 }
 p{
     line-height: 1.2em;
-    font-size: rem(18);
+    font-size: rem(16);
 }
 a, a:hover, a:active, a:visited, a:focus{
     text-decoration: none;
@@ -537,7 +537,7 @@ a strong{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 15px;
+    bottom: 25px;
     display: flex;
     button{
         font-size: 0px;

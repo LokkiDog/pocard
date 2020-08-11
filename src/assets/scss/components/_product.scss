@@ -60,7 +60,7 @@
       font-size: 16px;
       p{
          
-        line-height: 16px;
+        line-height: rem(18);
         &:last-of-type{
             margin-bottom: 0;
         }
@@ -155,7 +155,7 @@
           font-size: rem(18);
       }
       &--akkordeon {
-          width: 100px;
+          width: 118px;
       }
   }
   &__volume {

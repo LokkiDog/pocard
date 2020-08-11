@@ -140,6 +140,7 @@
     &-area {
       @include flex(column);
       overflow-y: scroll;
+      padding: 20px;
     }
     &-title {
       margin-bottom: 30px;
