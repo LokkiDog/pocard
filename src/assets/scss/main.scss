@@ -177,29 +177,40 @@ a strong{
 // ----------------------------------------------------------------------------
 // Main styles
 // ----------------------------------------------------------------------------
-
-.main-page{
-    padding-top: 150px;
-    padding-bottom: 50px;
+.index-main{
     background: #F8C99B url('../img/main-bg.jpg') no-repeat center /cover;
     @media screen and (max-width: $phoneWidth  ){
         background: #F8C99B url('../img/main-bg.jpg') no-repeat 100% /cover;
 
     }
 }
+.main-page{
+    padding-top: 150px;
+    padding-bottom: 50px;
+    
+}
 
 .main-title{
+    margin-left: -15px;
     padding: 130px 50px 130px 90px;
     height: 460px;
+    max-width: 900px;
     max-height: 460px;
     margin-bottom: 90px;
     background: rgba(255, 255, 255, 0.5);
     color: #007CC3;
     position: relative;
     @media screen and (max-width: $desktopWidth  ){
+        height: 415px;
+        max-height: 445px;
+        padding: 99px 35px 130px 59px;
+
+    }
+    @media screen and (max-width: $tableWidth   ){
         height: 480px;
         max-height: 480px;
     }
+    
     @media screen and (max-width: $tableWidth ){
         padding: 70px 50px;
         height: auto;
@@ -212,19 +223,36 @@ a strong{
     &::before{
         content: "";
         display: block;
-        max-width: 908px;
-        width: 100%;
-        height: 554px;
-        border: 2px solid #fff;
-        // background: url('../img/main-title-rec.svg') no-repeat;
+        width: 1000px;
+        height: 555px;
+        background: url('../img/main-title-rec.svg') no-repeat;
+        background-size: contain;
         position: absolute;
         top: 50%;
+        left: 20%;
         transform: translateY(-49.5%);
         z-index: 0;
+        @media screen and (max-width: $desktopWidth  ){
+            width: 828px;
+            height: 499px;
+        }
+        
         @media screen and (max-width: $tableWidth ){
             display: none;
         }
     }
+    // &::after{
+    //     content: "";
+    //     display: block;
+    //     max-width: 5px;
+    //     width: 100%;
+    //     height: 479px;
+    //     position: absolute;
+    //     top: calc(50% - 2px);
+    //     transform: translateY(-49.5%);
+    //     z-index: 100;
+    //     background: #e9f7ff;
+    // }
     &__h1{
         margin-bottom: 38px;
         line-height: 110%;
