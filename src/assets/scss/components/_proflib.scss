@@ -21,7 +21,11 @@
 .instructions {
   &-title {
     color: #000;
-    font-size: rem(18);
+    font-size: rem(16);
     padding-left: 10px;
+    &.instructions-title--helplinks {
+      font-size: rem(16);
+      font-weight: 400;
+    }
   }
 }
