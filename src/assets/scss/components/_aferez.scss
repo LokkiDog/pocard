@@ -9,8 +9,6 @@
       background: url('../img/top-bg.jpg') no-repeat bottom right 0px;
     }
   }
-  &.aferez-info {
-    font-size: rem(16);
     .product-info-box_min{
       .product-info-box__title,
       .product-info-box__body {
@@ -28,7 +26,7 @@
       }
     }
     
-  }
+  
   &-list {
     list-style-type: disc;
     margin-left: 18px;
@@ -81,7 +79,7 @@
     font-size: rem(16);
     .h3 {
       margin-bottom: 15px;
-      margin-top: 25px;
+      margin-top: 18px;
     }
   }
 }
