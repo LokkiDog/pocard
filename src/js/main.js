@@ -169,22 +169,7 @@ $(function (){
     /* 
     ======== Аккордеон ========
     */
-   
-    // $('input[name="tab-group"]').on("click", function(el){
-    //     // Запоминаем prop элемента 
-    //     var currentProp = $(this).prop('checked');
-    //     // Делаем у всех эдементов false(чтобы закрыть)
-    //     $('input[name="tab-group"]').prop('checked',false);
-    //     // Возвращаем нашему элементу prop
-    //     $(this).prop('checked', currentProp);
-
-    //     if($(this).prop('checked')) {
-                
-    //         $(this).siblings('.tab-content').slideDown();
-    //     }else {
-    //         $(this).siblings('.tab-content').slideUp();
-    //     } 
-    // })
+    
 
      $('input[name="tab-group"]').on("click", function(el){
         // Запоминаем prop элемента 
@@ -215,4 +200,31 @@ $(function (){
        $(this).siblings('.textmore__box-body').toggleClass('textmore__box-body--active');
    })
 
+});
+
+
+
+/* 
+========================================
+======== Выполнить после програзки DOM ========
+========================================
+*/
+$( document ).ready(function(){
+    
+    // Изменяем отступ (top) заголовка, в зависимости от количества строк
+    $('.box-border__title').each(function(){
+        var divSize     = $(this).height();
+            lineHieght  = $(this).css('line-height').split('px')[0];
+
+        // Высоту элемента делим на высоту строки
+        if (parseInt(divSize / lineHieght) == 2){
+            $(this).css('top','-32px');
+            $(this).css('line-height','32px');
+        }else if (parseInt(divSize / lineHieght) == 3){
+            $(this).css('top','-58px');
+            $(this).css('line-height','30px');
+        }else {
+            $(this).css('top','-12px');
+        }
+    })
 });

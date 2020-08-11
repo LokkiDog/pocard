@@ -335,7 +335,9 @@ a strong{
    
     &__title{
         position: absolute;
-        top: -26px;
+        //  Этот параметр меняется жинамически через JS (main.js)
+        top: -12px;
+        // -----------------
         background-color: #FFFFFF;
         padding: 0 22px;
         left: 20px;
