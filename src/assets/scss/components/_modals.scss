@@ -133,3 +133,38 @@
   }
 }
 
+// Модальное окно НОВОТИ
+
+.modal.modal--news{
+  .modal{
+    &-area {
+      @include flex(column);
+      overflow-y: scroll;
+    }
+    &-title {
+      margin-bottom: 30px;
+      font-weight: 500;
+      font-size: rem(22);
+      line-height: rem(26);
+    }
+    &-img {
+      width: 100%;
+      margin-bottom: 32px;
+    }
+    &-text {
+      margin-bottom: 12px;
+      font-size: rem(16);
+      line-height: rem(18);
+      text-align: justify;
+    }
+    &-date {
+      width: 100%;
+      margin-bottom: 35px;
+      text-align: right;
+      font-weight: 300;
+      font-size: rem(16);
+      line-height: rem(18);
+    }
+  }
+}
+

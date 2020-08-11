@@ -140,7 +140,11 @@ $(function (){
         e.preventDefault();
         $('#modal-clinic').removeClass('closed'); 
         $('html').css('overflow','hidden');
-
+    })
+    $('.open-modal-news').on("click",function (e) {
+        e.preventDefault();
+        $('#modal-clinic').removeClass('closed'); 
+        $('html').css('overflow','hidden');
     })
    
     /* 
