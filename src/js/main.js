@@ -18,6 +18,16 @@ $(function (){
         prevArrow: $('.product-nav-slider .slider-prev'),
         nextArrow: $('.product-nav-slider .slider-next'),
     });
+    // Слайдер на странице инфомация для пациентов
+    $('.doctors-slider').slick({
+        dots: true,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
 
     // Кнопка больше на странице продукта 
     $('.product-info-box_min .down-btn').click(function (){

@@ -45,6 +45,7 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4{
 }
 p{
     line-height: 1.2em;
+    font-size: rem(18);
 }
 a, a:hover, a:active, a:visited, a:focus{
     text-decoration: none;
@@ -92,7 +93,7 @@ h1, .h1{
     margin-bottom: 57px;
 }
 h2, .h2 {
-    font-size: 32px;
+    font-size: rem(32);
     color: #006DAB;
 }
 h3, .h3{
@@ -138,6 +139,9 @@ a strong{
 }
 .section-title{
     margin-bottom: 50px;
+    @media screen and (max-width: $phoneWidth  ){
+        margin-bottom: 20px;
+    }
     &_center{
         text-align: center;
     }
@@ -322,7 +326,14 @@ a strong{
         @media screen and (max-width: $phoneWidth) {
             margin-left: 0;
             margin: auto;
-            max-width: 98%;
+            max-width: 100%;
+            border: none;
+            padding: 0 15px;
+            .list {
+                &-ol {
+                    padding-left: 12px;
+                }
+            }
         }
         .box-border{
             &__title{
@@ -330,12 +341,13 @@ a strong{
                 top: -14px;
                 line-height: rem(30);
                 @media screen and (max-width: $phoneWidth) {
-                    max-width: 98%;
+                    top: 0;
+                    left: 0;
+                    max-width: 100%;
                     font-size: rem(26);
                     line-height: rem(28);
-                }
-                @media screen and (max-width: 340px) {
-                    top: -41px
+                    padding: 0;
+                    position: relative;
                 }
             }
         }
@@ -751,7 +763,7 @@ a strong{
 @import "./components/contacts";
 @import "./components/product";
 @import "./components/aferez";
-@import "./components/doctors";
+@import "./components/info";
 @import "./components/proflib";
 
 // Other
@@ -760,6 +772,5 @@ a strong{
 // ----------------------------------------------------------------------------
 // Link responsive style
 // ----------------------------------------------------------------------------
-@import "responsive";
 
 

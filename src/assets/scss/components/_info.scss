@@ -1,0 +1,84 @@
+.info {
+  &-info {
+    margin-top: 50px;
+    @media screen and (max-width: $phoneWidth) {
+      margin-top: 0;
+    }
+  }
+  &-clinics {
+    margin-top: 60px;
+    &_text {
+      margin-top: 60px;
+      font-size: rem(16);
+      line-height: rem(18);
+      @media screen and (max-width: $phoneWidth) {
+        margin-top: 40px;
+      }
+    }
+    &_clinics {
+      margin-top: 60px;
+    }
+  }
+  &-slider {
+    width: 104%;
+    @media screen and (max-width: $tableWidth ) {
+      width: 100%;
+    }
+  }
+}
+// Список ol
+.list {
+  line-height: rem(16);
+  &-ol {
+    font-size: rem(16);
+    list-style: disc;
+    @media screen and (max-width: $tableWidth ) {
+      font-size: rem(18);
+    }
+  }
+  &-li {
+    margin: 10px 0;
+  }
+}
+
+// Блок с клиниками
+
+.clinics {
+  margin-bottom: 100px;
+  font-weight: 500;
+  font-size: rem(16);
+  &-clinic {
+    @include flex(row, space-between, flex-start);
+    margin-top: 10px;
+    color: #000;
+  }
+  &-text {
+    padding-right: 10px;
+    max-width: 65%;
+    width: 100%;
+    @media screen and (max-width: $smTableWidth ) {
+      max-width: 80%;
+    }
+    @media screen and (max-width: $phoneWidth) {
+      max-width: 100%;
+      line-height: 150%;
+    }
+  }
+  
+  &-city {
+    max-width: 20%;
+    width: 100%;
+    font-weight: 400;
+    @media screen and (max-width: $smTableWidth ) {
+      display: none;
+    }
+  }
+  &-btn{
+    @media screen and (max-width: $phoneWidth) {
+      display: none;
+    }
+  }
+  
+}
+
+
