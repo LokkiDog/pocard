@@ -540,18 +540,30 @@ a strong{
         
     }
     &-contats {
+        
         li{
             font-size: 16px;
             line-height: 162.9%;
         }
     }
+    &-contacts-block{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    }
     &-nav{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         height: 100%;
         font-size: 22px;
+        line-height: 26px;
         @media screen and (max-width: $tableWidth ) {
+            margin-top: 0;
+        }
+        @media screen and (max-width: $phoneWidth ) {
             margin-top: 15px;
         }
         li{
@@ -570,6 +582,19 @@ a strong{
         }
     }
 }
+.footer-menu-desk{
+    display: block;
+    @media screen and (max-width: $tableWidth  ) {
+        display: none;
+    }
+}
+.footer-menu-mob {
+    display: none;
+    @media screen and (max-width: $tableWidth  ) {
+        display: block;
+    }
+}
+
 .catalog-tabs-row{
     align-items: center;
     margin-bottom: 60px;
