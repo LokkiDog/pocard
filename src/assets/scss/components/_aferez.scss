@@ -11,6 +11,9 @@
     }
     &.top-bg-section {
       background: url('../img/top-bg.jpg') no-repeat bottom right 0px;
+      @media screen and (max-width: $smTableWidth  ){
+        background: #fff;
+      }
     }
   }
     .product-info-box_min{
