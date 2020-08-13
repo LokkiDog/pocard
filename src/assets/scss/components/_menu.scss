@@ -16,7 +16,7 @@
       }
       &-a {
         font-weight: bold;
-        font-weight: rem(16);
+        line-height: rem(16);
       }
     }
   }
@@ -48,7 +48,7 @@
   }
   li.menu-item-has-children {
     position: relative;
-    & > a{
+    a{
         display: flex;
         justify-content: center;
         align-items: center;

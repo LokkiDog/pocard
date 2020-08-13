@@ -33,6 +33,10 @@
       align-items: stretch;
       margin-left: -30px;
       margin-right: -30px;
+      @media screen and (max-width: $tableWidth) {
+        margin-left: 0;
+        margin-right: 0;
+      }
       &>div{
           align-self: stretch;
           display: flex;
@@ -58,6 +62,10 @@
       padding: 5px 20px 8px 20px;
       position: relative;
       font-size: 16px;
+      @media screen and (max-width: $tableWidth) {
+        padding: 5px 10px 8px;
+        font-size: 14px;
+      }
       p{
          
         line-height: rem(18);
@@ -69,8 +77,8 @@
           font-weight: 500;
       }
       &--model {
-          padding-left: 8px;
-          padding-right: 8px;
+        //   padding-left: 8px;
+        //   padding-right: 8px;
       }
       .download-list {
         p {
@@ -89,7 +97,6 @@
           font-size: 16px;
           max-height: calc(16px * 3);
           line-height: 16px;
-          padding-top: 0;
           transition: max-height 0.5s;
           overflow: hidden;
           position: relative;
@@ -110,6 +117,12 @@
       }
   }
   &__model-list{
+      &.product-info-box__model-list--akkordeon{
+          max-width: 60%;
+          @media screen and (max-width: $tableWidth){
+            max-width: 100%;
+          }
+      }
       li{
           display: flex;
           //justify-content: space-between;
@@ -138,29 +151,53 @@
 }
 .model-list{
   &__name{
-      max-width: 180px;
-      width: 100%;
+      
+      width: 40%;
       margin-right: 5px;
+      @media screen and (max-width: $phoneWidth){
+        font-size: 10px;
+      }
       &--title {
-        font-size: rem(18);
+        font-size: rem(20);
+        word-wrap: normal;
+        @media screen and (max-width: $phoneWidth){
+            font-size: rem(16);
+          }
     }
     &--akkordeon {
         width: 160px;
     }
   }
   &__capacity {
-      width: 60px;
+      width: 20%;
       margin-right: 5px;
+      text-align: center;
+      @media screen and (max-width: $phoneWidth){
+        font-size: 10px;
+      }
+
       &--title {
-          font-size: rem(18);
+          font-size: rem(20);
+          word-wrap: normal;
+          @media screen and (max-width: $phoneWidth){
+            font-size: rem(16);
+          }
       }
       &--akkordeon {
           width: 118px;
       }
   }
   &__volume {
+    width: 40%;
+    @media screen and (max-width: $phoneWidth){
+        font-size:10px;
+      }
     &--title {
-        font-size: rem(18);
+        font-size: rem(20);
+        word-wrap: normal;
+        @media screen and (max-width: $phoneWidth){
+            font-size: rem(16);
+        }
     }
 }
 }

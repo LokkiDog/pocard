@@ -1,10 +1,14 @@
 .aferez {
   &-info{
-    // &--product {
-    //   &.top-bg-section {
-    //     background: url('../img/top-bg.jpg') no-repeat bottom right 0px;
-    //   }
-    // }
+    &--product {
+      &.top-bg-section {
+          background: url('../img/top-bg.jpg') no-repeat bottom right 0px;
+        
+          @media screen and (max-width: $phoneWidth){
+            background: #fff;
+          }
+      }
+    }
     &.top-bg-section {
       background: url('../img/top-bg.jpg') no-repeat bottom right 0px;
     }
@@ -44,6 +48,9 @@
       right: 20px;
       font-size: rem(14);
       font-weight: bold;
+      @media screen and (max-width: $phoneWidth){
+        bottom: -10px;
+      }
     }
   }
 
@@ -83,31 +90,3 @@
     }
   }
 }
-
-
-
-// textmore
-
-// .textmore {
-//   &__box{
-//     cursor: pointer;
-//     position: relative;
-//     &:after {
-//       content: "Подробнее...";
-//       position: absolute;
-//       font-weight: bold;
-//       font-style: italic;
-//       right: 25px;
-//       bottom: 0px;
-//     }
-//     &-body {
-//       max-height: 0;
-//       overflow: hidden;
-//       transition: all 0.8s;
-//       &.textmore__box-body--active {
-//         max-height: 9999px;
-        
-//       }
-//     }
-//   }
-// }

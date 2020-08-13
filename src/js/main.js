@@ -19,7 +19,7 @@ $(function (){
         nextArrow: $('.product-nav-slider .slider-next'),
     });
     // Слайдер на странице инфомация для пациентов
-    $('.doctors-slider').slick({
+    $('.info-slider').slick({
         dots: true,
         arrows: false,
         slidesToShow: 1,
@@ -29,17 +29,7 @@ $(function (){
         autoplaySpeed: 2000,
     });
 
-    // Кнопка больше на странице продукта 
-    $('.product-info-box_min .down-btn').click(function (){
-        $(this).toggleClass('down-btn_active');
-        $(this).parent('.product-info-box__body').toggleClass('product-info-box__body_active');
-        
-        if($(this).hasClass('down-btn_active')) {
-            $('.down-btn-text').text('Закрыть');
-        } else {
-            $('.down-btn-text').text('Открыть');
-        }
-    });
+    
 
     // Слайдер на страницу о нас
     $('.article-section-slider').slick({
@@ -154,7 +144,10 @@ $(function (){
    $('#burger').on("click", function () {
        $('#mob-menu').toggleClass('menu-closed');
    })
-
+    // Добавляем класс, если есть под меню
+    $( document ).ready(function(){
+        $('.mob-menu-ul-1').find('.sub-menu-mob').parent('.mob-menu-li--main_lvl_1').addClass('menu-item-has-children'); 
+    });
    // Отмена перехода по ссылке, которая раскрывается
    $('.mob-menu-a').on("click", function (e) {
        // Если есть дочернее меню, то НЕ переходим по ссылке
@@ -191,14 +184,7 @@ $(function (){
         
     })
 
-    /* 
-    ======== Блок с текстом ПОДРОБНЕЕ (где продукт, реализовано не здесь) ========
-    */
-   $('.textmore__box').on('click', function(){
-       console.log('10');
-       
-       $(this).siblings('.textmore__box-body').toggleClass('textmore__box-body--active');
-   })
+    
 
 });
 
@@ -210,7 +196,49 @@ $(function (){
 ========================================
 */
 $( document ).ready(function(){
-    
+
+    /* 
+    ======== Блок с текстом ПОДРОБНЕЕ ========
+    */
+
+   // Выравнивание высоты всех срытых блоков
+   $('.product-info-box_min .product-info-box__body').each(function(){
+        setBlockMaxHeight($(this));
+    });
+
+    // Функция установки максимальной высоты блока
+    function setBlockMaxHeight(block, max = 0){
+        if(max == 0){
+            var lineHieght  = $(block).find('p').css('line-height').split('px')[0];
+            newHeight = lineHieght * 3 + 5;
+            $(block).css('max-height',newHeight);
+        }else{
+            $(block).css('max-height',max);
+        }
+        
+    }
+
+    // Кнопка больше на странице продукта 
+    $('.product-info-box_min .down-btn').click(function (){
+        $(this).toggleClass('down-btn_active');
+        $(this).parent('.product-info-box__body').toggleClass('product-info-box__body_active');
+        
+        if($(this).parent('.product-info-box__body').hasClass('product-info-box__body_active')){
+            setBlockMaxHeight($(this).parent('.product-info-box__body'), 9999);
+        }else{
+            setBlockMaxHeight($(this).parent('.product-info-box__body'));
+        }
+        
+        if($(this).hasClass('down-btn_active')) {
+            $('.down-btn-text').text('Закрыть');
+        } else {
+            $('.down-btn-text').text('Открыть');
+        }
+    });
+
+    /* 
+    ======== Заголовки в ораньжевой рамке ========
+    */
     // Изменяем отступ (top) заголовка, в зависимости от количества строк
     $('.box-border__title').each(function(){
         var divSize     = $(this).height();
@@ -220,9 +248,11 @@ $( document ).ready(function(){
         if (parseInt(divSize / lineHieght) == 2){
             $(this).css('top','-32px');
             $(this).css('line-height','32px');
+            $(this).parent('.box-border').css('padding-top', '50px');
         }else if (parseInt(divSize / lineHieght) == 3){
             $(this).css('top','-58px');
             $(this).css('line-height','30px');
+            $(this).parent('.box-border').css('padding-top', '60px');
         }else {
             $(this).css('top','-12px');
         }
