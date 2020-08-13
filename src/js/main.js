@@ -184,7 +184,12 @@ $(function (){
         
     })
 
-    
+    /* 
+    ======== После отправки формы ========
+    */ 
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+            document.getElementById('modal-thanks').classList.remove("closed");
+        }, false );
 
 });
 
