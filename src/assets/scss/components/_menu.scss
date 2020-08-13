@@ -52,17 +52,21 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        &::after{
-            content: "";
-            display: inline-block;
-            transition: all 0.3s;
-            width: 10px;
-            height: 7px;
-            flex-shrink: 0;
-            margin-left: 5px;
-            background: url("../img/ico-drop-down.svg") no-repeat center;
-        }
+        
     }
+    & > .mob-menu-a{
+      &::after{
+        content: "";
+        display: inline-block;
+        transition: all 0.3s;
+        width: 10px;
+        height: 7px;
+        flex-shrink: 0;
+        margin-left: 5px;
+        background: url("../img/ico-drop-down.svg") no-repeat center;
+      }
+    }
+    
   }
   ul.sub-menu-mob{
     display: none;
