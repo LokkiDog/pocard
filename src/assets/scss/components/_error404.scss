@@ -1,9 +1,10 @@
 .error404 {
   @include flex(row, center, center);
-  height: calc(100vh);
+  height: calc(90vh);
   background: url('../img/contacts-bg.jpg') bottom no-repeat #007CC3;
   background-size: cover;
   color: $default-color;
+  &.error404-section{background: transparent;}
   @include link_a;
 
   &-block{
