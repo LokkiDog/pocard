@@ -1,11 +1,19 @@
 .history{
   // display: none;
-  margin-top: 120px;
+//   margin-top: 120px;
   margin-bottom: 190px;
   padding: 76px 0;
   position: relative;
   @media screen and (max-width: $smTableWidth ){
       display: none;
+  }
+  &-title {
+    .section-title {
+        margin-bottom: -30px;
+      }
+  }
+  .margin {
+      height: 124px;
   }
   .row {
       margin: 0 5px;
@@ -64,6 +72,12 @@
           margin-left: auto;
           margin-right: auto;
           height: 50px;
+          &.history-item__name--link{
+              text-decoration: underline;
+              color: initial;
+              display: block;
+              line-height: 18px;
+          }
       }
       &__date{
           font-size: 36px;

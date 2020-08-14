@@ -157,6 +157,10 @@ a strong{
         margin-bottom: 5px;
         display: inline-block;
     }
+    &_10ib{
+        margin-bottom: 10px;
+        display: inline-block;
+    }
     &_10{
         margin-bottom: 10px;
     }
@@ -177,37 +181,64 @@ a strong{
         max-width: 1280px;
     }
 }
+.sup {
+    position: relative;
+    &:after{
+        content: '©';
+        height: 100%;
+        position: absolute;
+        text-decoration: none !important;
+        top: -4px;
+        right: -12px;
+    }
+}
 // ----------------------------------------------------------------------------
 // Main styles
 // ----------------------------------------------------------------------------
+.index-body {
+    height: 100vh;
+    overflow: hidden;
+    @media screen and (max-width: $phoneWidth   ){
+       height: auto;
+       overflow: visible;
+    }
+}
 .index-main{
+    height: 100vh;
+    overflow: hidden;
     background: #F8C99B url('../img/main-bg.jpg') no-repeat center /cover;
     @media screen and (max-width: $phoneWidth  ){
+        height: auto;
+        overflow: visible;
         background: #F8C99B url('../img/main-bg.jpg') no-repeat 100% /cover;
 
     }
 }
-.main-page{
-    padding-top: 150px;
-    padding-bottom: 50px;
-    
+.main-page {
+    padding-top: 40px;
+    padding-bottom: 0px;
+    @media screen and (min-height: 800px  ){
+        padding-top: 74px;
+    }
 }
 
 .main-title{
     margin-left: -15px;
-    padding: 130px 50px 130px 90px;
-    height: 460px;
-    max-width: 900px;
-    max-height: 460px;
-    margin-bottom: 90px;
-    background: rgba(255, 255, 255, 0.5);
-    color: #007CC3;
+    padding: 48px 20px 20px 90px;
+    height: 100%;
+    max-width: 746px;
+    max-height: 44vh;
+    margin-bottom: 11vh;
+    background: hsla(0,0%,100%,.5);
+    color: #007cc3;
     position: relative;
-    @media screen and (max-width: $desktopWidth  ){
-        height: 415px;
-        max-height: 445px;
-        padding: 99px 35px 130px 59px;
-
+    @media screen and (max-width: $desktopWidth    ){
+        margin-bottom: 7vh;
+    }
+    @media screen and (max-width: $smDesktopWidth    ){
+        padding: 48px 20px 20px 90px;
+        max-width: 793px;
+        max-height: 35vh;
     }
     @media screen and (max-width: $tableWidth   ){
         height: 480px;
@@ -218,11 +249,11 @@ a strong{
         padding: 70px 50px;
         height: auto;
     }
-    @media screen and (max-width: $phoneWidth  ){
-        padding: 30px 15px;
+    @media screen and (max-width: $phoneWidth   ){
+        padding: 30px 15px !important;
         height: auto;
         margin: auto;
-        margin-bottom: 150px;
+        margin-bottom: 50px !important;
     }
     @media screen and (max-width: 350px  ){
         padding: 20px 8px;
@@ -231,18 +262,17 @@ a strong{
     &::before{
         content: "";
         display: block;
-        width: 1000px;
-        height: 555px;
-        background: url('../img/main-title-rec.svg') no-repeat;
+        width: 839px;
+        height: 53vh;
+        background: url(../../assets/img/main-title-rec.svg) no-repeat;
         background-size: contain;
         position: absolute;
         top: 50%;
         left: 20%;
         transform: translateY(-49.5%);
         z-index: 0;
-        @media screen and (max-width: $desktopWidth  ){
-            width: 828px;
-            height: 499px;
+        @media screen and (max-width: $smDesktopWidth  ){
+            display: none;
         }
         
         @media screen and (max-width: $tableWidth ){
@@ -264,6 +294,12 @@ a strong{
     &__h1{
         margin-bottom: 38px;
         line-height: 110%;
+        @media screen and (max-width: $desktopWidth    ){
+            font-size: rem(38);
+        }
+        @media screen and (max-width: $smDesktopWidth    ){
+            font-size: rem(32);
+        }
         @media screen and (max-width: $phoneWidth  ){
             font-size: rem(28);
             margin-bottom: 18px;
@@ -280,6 +316,12 @@ a strong{
         top: 44px;
         right: 323px;
         max-width: 92%;
+        @media screen and (max-width: $desktopWidth    ){
+            font-size: rem(28);
+        }
+        @media screen and (max-width: $smDesktopWidth    ){
+            font-size: rem(24);
+        }
         @media screen and (max-width: $tableWidth  ){
             font-size: rem(30);
         }
@@ -293,16 +335,20 @@ a strong{
         }
     }
 }
-.section-news {
-    padding-bottom: 50px;
+.section-news { 
     .article-card {
-        height: 90%;
+        height: 85%;
+        background: rgba(255,255,255,0.8);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @media screen and (max-width: $desktopWidth    ){
+            padding: 15px 19px 18px 38px;
+        }
         @media screen and (max-width: $smTableWidth   ){
             height: auto;
         }
+        
     }
 }
 .article-card{
@@ -391,6 +437,11 @@ a strong{
             top: -35px;
             max-width: 214px;
         }
+        span {
+            vertical-align: super;
+            line-height: 5px;
+            font-size: rem(20);
+        }
         
     }
     p{
@@ -442,8 +493,7 @@ a strong{
 }
 
 .about-items{
-    margin-top: 150px;
-    margin-bottom: -48px;
+    margin-top: 70px;
     &_min{
         .bg-ico{
             width: 85px;
@@ -780,7 +830,7 @@ a strong{
         font-weight: 700;
         margin-bottom: 10px;
         a{
-            color: rgba(128, 182, 213, 0.6);
+            color: rgba(0,124,195, .8);
             transition: all 0.3s;
             @media screen and (max-width: $phoneWidth ) {
                 color: $primary-color-dark ;
@@ -871,6 +921,14 @@ a strong{
 }
 .product-main-slider{
     margin-bottom: 30px;
+    transition: all 0.2s;
+    cursor: pointer;
+    z-index: 20;
+    &.product-main-slider--active {
+        transform: scale(1.5);
+        background: rgba(255,255,255, 0.8);
+        border-radius: 50px;
+    }
     img{
         max-height: 350px;
     }
@@ -903,7 +961,7 @@ a strong{
         width: 60px;
         height: 80px;
         padding: 0;
-        z-index: 2;
+        z-index: 25;
     }
     .slider-prev{
         left: 0;

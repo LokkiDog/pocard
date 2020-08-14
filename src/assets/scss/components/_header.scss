@@ -22,6 +22,11 @@
   &__menu{
       display: flex;
       align-items: center;
+      .logo {
+          img {
+              max-width: 150%;
+          }
+      }
   }
   &__nav{
       display: flex;

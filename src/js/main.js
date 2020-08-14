@@ -6,6 +6,12 @@ $(function (){
         slidesToShow: 1,
         slidesToScroll: 1,
     });
+    // Увеличение фото при наведении
+    $('.product-main-slider').on('click',function(){
+        $(this).toggleClass('product-main-slider--active');
+    });
+
+
     $('.product-nav-slider__wrap').slick({
         //slidesToShow: 2,
         slidesToScroll: 1,
@@ -45,39 +51,7 @@ $(function (){
         event.preventDefault();
     });
 
-    
-    // Каталог табы
-
-    // $('.catalog-tabs-content li').on('mouseover', function () {
-    //     $(this).each(function () {
-    //         $.each(this.attributes, function (i, a) {
-    //             if (a.name.indexOf('data-catalog-') + 1) {
-    //                dataAttr = a.name.replace('class', '');
-    //             }
-    //             $('.catalog-tabs li').removeClass('active');
-    //             $('.catalog-tabs li').filter('[' + dataAttr + ']').addClass('active');
-    //         });
-    //     });
-    //     $('.catalog-tabs-content li').removeClass('active');
-    //     $(this).addClass('active');
-    // });
-
-    // $('.catalog-tabs li').on('mouseover', function () {
-    //     $(this).each(function () {
-    //         $.each(this.attributes, function (i, a) {
-    //             if (a.name.indexOf('data-product-') + 1) {
-    //                 dataAttr = a.name.replace('class', '');
-    //             }
-    //             console.log(dataAttr);
-    //             $('.catalog-tabs-content li').removeClass('active');
-    //             $('.catalog-tabs-content li').filter('[' + dataAttr + ']').addClass('active');
-    //         });
-    //     });
-    //     $('.catalog-tabs li').removeClass('active');
-    //     $(this).addClass('active');
-
-    // });
-
+     
 
     function filterCatalog(hoverElem, highLightElem, dataStr){
         hoverElem.on('mouseover', function () {
@@ -162,9 +136,16 @@ $(function (){
     /* 
     ======== Аккордеон ========
     */
-    
+    // $('.tab').on("click",function(e){
+    //     console.log('1');
+    //     $(this).find('input[name="tab-group"]').click();
+    //     console.log('2');
+
+    // });
 
      $('input[name="tab-group"]').on("click", function(el){
+        // el.preventDefault();
+        console.log($(this));
         // Запоминаем prop элемента 
         var currentProp = $(this).prop('checked');
         // Делаем у всех эдементов false(чтобы закрыть)
@@ -173,7 +154,6 @@ $(function (){
         $(this).prop('checked', currentProp);
 
         $('input[name="tab-group"]').each(function (){
-            console.log($(this).prop('checked'));
             
             if($(this).prop('checked')) {
                 $(this).siblings('.tab-content').slideDown();
@@ -262,4 +242,8 @@ $( document ).ready(function(){
             $(this).css('top','-12px');
         }
     })
+    /* 
+    ======== index накидываем класс на body ========
+    */
+   $('.index-main').parents('body').addClass('index-body');
 });

@@ -154,11 +154,12 @@
       
       width: 40%;
       margin-right: 5px;
+      font-size: rem(14);
       @media screen and (max-width: $phoneWidth){
         font-size: 10px;
       }
       &--title {
-        font-size: rem(20);
+        font-size: rem(16);
         word-wrap: normal;
         @media screen and (max-width: $phoneWidth){
             font-size: rem(16);
@@ -172,12 +173,13 @@
       width: 20%;
       margin-right: 5px;
       text-align: center;
+      font-size: rem(14);
       @media screen and (max-width: $phoneWidth){
         font-size: 10px;
       }
 
       &--title {
-          font-size: rem(20);
+          font-size: rem(16);
           word-wrap: normal;
           @media screen and (max-width: $phoneWidth){
             font-size: rem(16);
@@ -189,11 +191,12 @@
   }
   &__volume {
     width: 40%;
+    font-size: rem(14);
     @media screen and (max-width: $phoneWidth){
         font-size:10px;
       }
     &--title {
-        font-size: rem(20);
+        font-size: rem(16);
         word-wrap: normal;
         @media screen and (max-width: $phoneWidth){
             font-size: rem(16);
