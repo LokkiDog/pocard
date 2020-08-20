@@ -446,10 +446,11 @@ a strong{
     }
     p{
         margin-bottom: 0;
+        text-align: left;
     }
     &_justify{
         p{
-            text-align: justify;
+            text-align: left;
         }
     }
 
@@ -494,6 +495,9 @@ a strong{
 
 .about-items{
     margin-top: 70px;
+    &__body{
+        text-align: left;
+    }
     &_min{
         .bg-ico{
             width: 85px;
@@ -659,7 +663,14 @@ a strong{
             }
         }
     }
+    // position: absolute;
+    // right: 0;
+    // width: 40%;
+    // box-shadow: 0px 5px 10px -5px #000;
+    // z-index: 30;
+    // background: #fff;
     &-slider{
+        
         &_1{
             .article-section-slider__item{
                 max-height: 334px;
@@ -705,7 +716,28 @@ a strong{
             padding: 15px;
     }
 }
-
+.article-section-slider  {
+    position: relative;
+    .slider-arrow{
+        position: absolute;
+        top: calc(50% - 40px);
+        background: transparent;
+        border: none;
+        z-index: 10;
+        &.slider-prev{
+            left: -25px;
+            @media screen and (max-width: $smTableWidth){
+                left: 0;
+            }
+        }
+        &.slider-next{
+            right: -25px;
+            @media screen and (max-width: $smTableWidth){
+                right: 0;
+            }
+        }
+    }
+}
 .slick-dots{
     position: absolute;
     left: 50%;
@@ -915,7 +947,7 @@ a strong{
     }
     .box-border{
         p{
-            text-align: justify;
+            text-align: left;
         }
     }
 }
@@ -923,7 +955,7 @@ a strong{
     margin-bottom: 30px;
     transition: all 0.2s;
     cursor: pointer;
-    z-index: 20;
+    z-index: 18;
     &.product-main-slider--active {
         transform: scale(1.5);
         background: rgba(255,255,255, 0.8);
@@ -990,7 +1022,17 @@ a strong{
         }
     }
 }
-
+.slider-prev{
+    left: 0;
+    top: -100%;
+    img{
+        transform: rotate(180deg);
+    }
+}
+.slider-next{
+    top: -100%;
+    right: 0;
+}
 
 ::-webkit-scrollbar {
     -webkit-appearance: none;

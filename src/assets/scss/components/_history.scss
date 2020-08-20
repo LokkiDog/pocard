@@ -8,6 +8,9 @@
       display: none;
   }
   &-title {
+    @media screen and (max-width: $smTableWidth ){
+        display: none;
+    }
     .section-title {
         margin-bottom: -30px;
       }

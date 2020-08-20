@@ -1,4 +1,13 @@
+.product{
+  &__status {
+    margin-bottom: 40px;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
 .product-use{
+ 
   &__title{
       font-weight: 500;
       font-size: rem(28);
@@ -8,16 +17,19 @@
   &__list{
       li{
           margin-bottom: 7px;
+          margin-left: 15px;
+          position: relative;
           &::before{
-              content: '';
-              display: inline-block;
+              content: "";
+              display: block;
               width: 5px;
               height: 5px;
               border-radius: 50%;
-              background: #006DAB;
+              background: #006dab;
               margin-right: 5px;
-              position: relative;
-              top: -2px;
+              position: absolute;
+              margin-top: 9px;
+              left: -15px;
           }
           &:last-child{
               margin-bottom: 0;
@@ -106,6 +118,9 @@
               bottom: 0px;
               right: 14px;
               background: #fff;
+              &-text {
+                padding-right: 5px;
+              }
               
           }
       }
@@ -147,6 +162,11 @@
       img {
         transform: rotate(180deg);
       }
+  }
+  &--hide {
+    img {
+      transform: rotate(180deg);
+    }
   }
 }
 .model-list{

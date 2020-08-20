@@ -37,12 +37,22 @@ $(function (){
 
     
 
-    // Слайдер на страницу о нас
-    $('.article-section-slider').slick({
+    // Слайдеры на страницу о нас
+    $('.article-section-slider__wrapper-1').slick({
         dots: true,
-        arrows: false,
+        arrows: true,
         slidesToShow: 1,
-        //adaptiveHeight: true
+        // asNavFor: '.product-main-slider',
+        prevArrow: $('.article-section-slider_1 .slider-prev'),
+        nextArrow: $('.article-section-slider_1 .slider-next'),
+    });
+    $('.article-section-slider__wrapper-2').slick({
+        dots: true,
+        arrows: true,
+        slidesToShow: 1,
+        // asNavFor: '.product-main-slider',
+        prevArrow: $('.article-section-slider_2 .slider-prev'),
+        nextArrow: $('.article-section-slider_2 .slider-next'),
     });
 
     //Скролл на странице о нас
@@ -136,16 +146,10 @@ $(function (){
     /* 
     ======== Аккордеон ========
     */
-    // $('.tab').on("click",function(e){
-    //     console.log('1');
-    //     $(this).find('input[name="tab-group"]').click();
-    //     console.log('2');
-
-    // });
-
+    
      $('input[name="tab-group"]').on("click", function(el){
+         c 
         // el.preventDefault();
-        console.log($(this));
         // Запоминаем prop элемента 
         var currentProp = $(this).prop('checked');
         // Делаем у всех эдементов false(чтобы закрыть)
@@ -163,6 +167,53 @@ $(function (){
         });
         
     })
+    /* 
+    ======== Выпадающий список на стр. продукта(ещё) ========
+    */
+   // Действие по нажатию на кнопку Ещё
+   $('.product-use__list').on('click','.down-ul', function(){
+    var ul = $(this).parents('.product-use__list');
+        li = $(ul).children('li'); 
+        
+        $.each(li, function(ind, cur){
+            if($(cur).attr('data-status') == 'hide'){
+                $(cur).show();
+                $(cur).attr('data-status', 'show');
+                $(ul).find('.down-ul--show').hide();
+                $(ul).find('.down-ul--hide').show();
+            }else if ($(cur).attr('data-status') == 'show'){
+                $(cur).attr('data-status','hide');
+                $(cur).hide();
+                $(ul).find('.down-ul--show').show();
+                $(ul).find('.down-ul--hide').hide();
+            }
+        }); 
+   });
+
+   // Скрытие элементов
+   $( document ).ready(function(){
+        var ul = $('.product-use__list');
+            li = $(ul).children('li');
+            max = 6;
+
+        if (li.length > max) {
+            // скрываем доп. элементы
+            $.each(li, function(ind, cur){
+                // если больше разрешенного числа
+                if(ind > max -1 ){
+                    $(cur).attr('data-status','hide');
+                    $(cur).hide();
+                }
+            });
+            // Добавляем кнопку Ещё
+            var button_show = "<button class='down-btn down-ul down-ul--show'><em class='down-btn-text'>Ещё </em> <img src='assets/img/down-black.svg' alt='Open'></button>";
+                button_hide = "<button class='down-btn down-ul down-ul--hide'><em class='down-btn-text'>Скрыть </em> <img src='assets/img/down-black.svg' alt='Open'></button>";
+            $(ul).append(button_show);
+            $(ul).append(button_hide);
+            $('.down-ul--hide').hide();
+            
+        }
+   });
 
     /* 
     ======== После отправки формы ========

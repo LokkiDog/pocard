@@ -98,4 +98,15 @@
       margin-top: 18px;
     }
   }
+  &-img-text {
+    padding-left: 38px;
+    margin-bottom: 130px;
+    max-width: 624px;
+    font-weight: 500;
+    font-size: rem(14);
+    @media screen and (max-width: $phoneWidth){
+      padding-left: 0;
+      max-width: none;
+    }
+  }
 }
