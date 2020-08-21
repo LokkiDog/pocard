@@ -139,6 +139,9 @@
   @include link_a($primary-color);
   a{
     font-size: initial;
+    margin-bottom: 1em;
+    margin-top: 10px;
+    font-size: 1rem;
   }
 }
 

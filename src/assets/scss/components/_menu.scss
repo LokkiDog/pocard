@@ -1,22 +1,29 @@
 .mob-menu {
   border-top: 2px solid $primary-color;
-  text-align: center;
+  text-align: right;
   color: $primary-color;
   padding: 20px 0;
   transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 20px;
   &.menu-closed{
     display: none;
   }
   &-ul-1 {
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     .mob-menu{
       &-li{
         margin-top: 10px;
-        line-height: rem(20px);
+        line-height: 24px;
       }
       &-a {
         font-weight: bold;
-        line-height: rem(16);
+        line-height: 24px;
       }
     }
   }
@@ -36,7 +43,7 @@
     margin-top: 15px;
     height: 90px;
     @media screen and (max-width: $phoneWidth){
-      @include flex(column, space-around,center);
+      @include flex(column, space-around,flex-end);
     }
     
   }
@@ -50,7 +57,7 @@
     position: relative;
     a{
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         
     }

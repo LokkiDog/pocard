@@ -114,12 +114,16 @@
   display: flex;
   align-items: center;
   font-weight: 500;
+  text-decoration: underline;
   img{
       flex-shrink: 0;
       margin-right: 15px;
       width: 16px;
       height: 16px;
   }
+}
+.link-question{
+    text-decoration: underline;
 }
 
 .lang, .widget_polylang ul {
