@@ -148,7 +148,7 @@ $(function (){
     */
     
      $('input[name="tab-group"]').on("click", function(el){
-         c 
+        
         // el.preventDefault();
         // Запоминаем prop элемента 
         var currentProp = $(this).prop('checked');
@@ -246,7 +246,7 @@ $( document ).ready(function(){
     function setBlockMaxHeight(block, max = 0){
         if(max == 0){
             var lineHieght  = $(block).find('p').css('line-height').split('px')[0];
-            newHeight = lineHieght * 3 + 5;
+            newHeight = lineHieght * 3 + 5 + 18;
             $(block).css('max-height',newHeight);
         }else{
             $(block).css('max-height',max);

@@ -215,10 +215,11 @@ a strong{
     }
 }
 .main-page {
-    padding-top: 40px;
+    height: 50vh;
+    margin-top: 5%;
     padding-bottom: 0px;
     @media screen and (min-height: 800px  ){
-        padding-top: 74px;
+        // padding-top: 74px;
     }
 }
 
@@ -228,12 +229,19 @@ a strong{
     height: 100%;
     max-width: 746px;
     max-height: 44vh;
-    margin-bottom: 11vh;
+    margin-bottom: 0;
     background: hsla(0,0%,100%,.5);
     color: #007cc3;
+
     position: relative;
+    @media screen and (min-width: $smDesktopWidth  ) and (min-height: 840px){
+        padding: 57px 20px 50px 88px;
+    }
+    @media screen and (min-width: $smDesktopWidth  ) and (min-height: 950px){
+        padding: 70px 21px 77px 90px;
+    }
     @media screen and (max-width: $desktopWidth    ){
-        margin-bottom: 7vh;
+        // margin-bottom: 7vh;
     }
     @media screen and (max-width: $smDesktopWidth    ){
         padding: 48px 20px 20px 90px;
@@ -254,6 +262,7 @@ a strong{
         height: auto;
         margin: auto;
         margin-bottom: 50px !important;
+        margin-top: 50px !important;
     }
     @media screen and (max-width: 350px  ){
         padding: 20px 8px;
@@ -263,14 +272,16 @@ a strong{
         content: "";
         display: block;
         width: 839px;
-        height: 53vh;
-        background: url(../../assets/img/main-title-rec.svg) no-repeat;
+        height: 120%;
+        background: url('../img/main-title-rec.svg') no-repeat;
         background-size: contain;
         position: absolute;
         top: 50%;
-        left: 20%;
+        left: 40%;
         transform: translateY(-49.5%);
         z-index: 0;
+        
+        
         @media screen and (max-width: $smDesktopWidth  ){
             display: none;
         }
@@ -336,19 +347,22 @@ a strong{
     }
 }
 .section-news { 
+    // margin-top: 10%;
+    // margin-bottom: 10%;
+    height: 50vh;
     .article-card {
         height: 85%;
-        background: rgba(255,255,255,0.8);
+        background: rgba(255,255,255,0.6);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding: 16px 19px 16px 38px;
         @media screen and (max-width: $desktopWidth    ){
             padding: 15px 19px 18px 38px;
         }
         @media screen and (max-width: $smTableWidth   ){
             height: auto;
         }
-        
     }
 }
 .article-card{
@@ -446,7 +460,7 @@ a strong{
     }
     p{
         margin-bottom: 0;
-        text-align: left;
+        text-align: justify;
     }
     &_justify{
         p{

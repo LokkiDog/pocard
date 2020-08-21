@@ -79,8 +79,7 @@
         font-size: 14px;
       }
       p{
-         
-        line-height: rem(18);
+        line-height: 120%;
         &:last-of-type{
             margin-bottom: 0;
         }
@@ -105,6 +104,7 @@
   }
   &_min{
       .product-info-box__body{
+          padding-bottom: 26px;
           margin: 2px 0;
           font-size: 16px;
           max-height: calc(16px * 3);
@@ -115,8 +115,14 @@
           .down-btn{
               position: absolute;
               z-index: 1;
-              bottom: 0px;
-              right: 14px;
+              bottom: 0;
+              right: 0;
+              width: 100%;
+              padding-right: 8px;
+              margin-right: 1px;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
               background: #fff;
               &-text {
                 padding-right: 5px;
@@ -126,6 +132,7 @@
       }
       .product-info-box__body_active{
           max-height: 9999px;
+          padding-bottom: 26px;
           &::after{
               height: 17px;
           }

@@ -98,6 +98,10 @@
   .modal{
     &-area {
       overflow: hidden;
+      padding: 70px;
+      @media screen and (max-width: $phoneWidth){
+        padding: 15px;
+      }
     }
     &-table{
       max-height: 80%;
