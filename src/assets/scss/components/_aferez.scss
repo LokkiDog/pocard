@@ -101,11 +101,13 @@
     }
   }
   &-img-text {
+    margin: auto;
     padding-left: 38px;
     margin-bottom: 130px;
     max-width: 588px;
     font-weight: 500;
     font-size: rem(14);
+    text-align: center;
     @media screen and (max-width: $phoneWidth){
       padding-left: 0;
       max-width: none;

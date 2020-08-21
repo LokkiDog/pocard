@@ -27,12 +27,14 @@ $(function (){
     // Слайдер на странице инфомация для пациентов
     $('.info-slider').slick({
         dots: true,
-        arrows: false,
+        arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
         autoplay: true,
         autoplaySpeed: 2000,
+        prevArrow: $('.info-slider__wrapper .slider-prev'),
+        nextArrow: $('.info-slider__wrapper .slider-next'),
     });
 
     

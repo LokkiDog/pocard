@@ -184,7 +184,7 @@ a strong{
 .sup {
     position: relative;
     &:after{
-        content: '©';
+        content: '®';
         height: 100%;
         position: absolute;
         text-decoration: none !important;
@@ -221,6 +221,12 @@ a strong{
     @media screen and (min-height: 800px  ){
         // padding-top: 74px;
     }
+    @media screen and (max-width: 1500px ) and (min-height: 1000px){
+        margin-top: 6%;
+    }
+    @media screen and (max-width: 1600px ) and (min-height: 950px){
+        margin-top: 7%;
+    }
 }
 
 .main-title{
@@ -240,6 +246,52 @@ a strong{
     @media screen and (min-width: $smDesktopWidth  ) and (min-height: 950px){
         padding: 70px 21px 77px 90px;
     }
+
+
+    
+    @media screen and (max-width: 1600px    ){
+        max-width: 945px;
+        padding-left: 10%;
+    }
+    @media screen and (max-width: 1440px    ){
+        max-width: 957px;
+        padding-left: 16%;
+    }
+    @media screen and (max-width: 1350px    ){
+        padding-left: 10%;
+    }
+    @media screen and (max-width: 1300px    ){
+        max-width: 63%;
+    }
+    @media screen and (max-width: 1200px    ){
+        padding-left: 79px;
+        max-width: 63%;
+    }
+    @media screen and (max-width: 1080px    ){
+        max-width: 70%;
+    }
+
+    @media screen and (min-width: 1420px ) and (min-height: 1000px){
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 200px;
+    }
+    @media screen and (min-width: 1600px    ){
+        max-width: 1007px;
+        padding-left: 208px;
+    }
+    @media screen and (min-width: 1650px    ){
+        max-width: 1031px;
+        padding-left: 236px;
+    }
+    @media screen and (min-width: 1700px    ){
+        max-width: 1080px;
+        padding-left: 280px;
+    }
+    
+
+
+
     @media screen and (max-width: $desktopWidth    ){
         // margin-bottom: 7vh;
     }
@@ -281,7 +333,13 @@ a strong{
         transform: translateY(-49.5%);
         z-index: 0;
         
-        
+        @media screen and (min-width: $smDesktopWidth  ) and (max-height: 850px){
+            left: 67%;
+        }
+        @media screen and (min-width: $smDesktopWidth  ) and (min-height: 850px)and (max-height: 950px) {
+            left: 57%;
+        }
+
         @media screen and (max-width: $smDesktopWidth  ){
             display: none;
         }
@@ -289,6 +347,7 @@ a strong{
         @media screen and (max-width: $tableWidth ){
             display: none;
         }
+
     }
     // &::after{
     //     content: "";
@@ -550,6 +609,9 @@ a strong{
 }
 
 .about-section {
+    a strong {
+        color: $primary-color;
+    }
     @media screen and (max-width: $tableWidth  ){
         .box-border{
             margin-top: 150px;
@@ -730,7 +792,8 @@ a strong{
             padding: 15px;
     }
 }
-.article-section-slider  {
+.article-section-slider,
+.info-slider__wrapper {
     position: relative;
     .slider-arrow{
         position: absolute;
@@ -748,6 +811,22 @@ a strong{
             right: -25px;
             @media screen and (max-width: $smTableWidth){
                 right: 0;
+            }
+        }
+    }
+}
+.info-slider__wrapper {
+    .slider-arrow{
+        &.slider-prev{
+            left: -45px;
+            @media screen and (max-width: $smTableWidth){
+                left: 0;
+            }
+        }
+        &.slider-next{
+            right: -72px;
+            @media screen and (max-width: $smTableWidth){
+                left: 0;
             }
         }
     }
