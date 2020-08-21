@@ -95,6 +95,7 @@
 // Модальное окно клиники
 
 .modal.modal--clinic{
+  
   .modal{
     &-area {
       overflow: hidden;
@@ -134,6 +135,10 @@
         margin-top: 10px;
       }
     }
+  }
+  @include link_a($primary-color);
+  a{
+    font-size: initial;
   }
 }
 

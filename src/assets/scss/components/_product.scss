@@ -189,8 +189,11 @@
         font-size: rem(16);
         word-wrap: normal;
         @media screen and (max-width: $phoneWidth){
-            font-size: rem(16);
-          }
+           font-size: rem(16);
+        }
+        @media screen and (max-width: 380px){
+          font-size: 12px;
+        }
     }
     &--akkordeon {
         width: 160px;
@@ -211,6 +214,9 @@
           @media screen and (max-width: $phoneWidth){
             font-size: rem(16);
           }
+          @media screen and (max-width: 380px){
+            font-size: 12px;
+          }
       }
       &--akkordeon {
           width: 118px;
@@ -221,12 +227,18 @@
     font-size: rem(14);
     @media screen and (max-width: $phoneWidth){
         font-size:10px;
-      }
+    }
+    @media screen and (max-width: 380px){
+      width: 52%;
+    }
     &--title {
         font-size: rem(16);
         word-wrap: normal;
         @media screen and (max-width: $phoneWidth){
             font-size: rem(16);
+        }
+        @media screen and (max-width: 380px){
+          font-size: 12px;
         }
     }
 }

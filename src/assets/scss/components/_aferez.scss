@@ -32,12 +32,19 @@
           max-height: 99999px;
         }
       }
+      @media screen and (max-width: $phoneWidth){
+        .product-info-box__title {
+          max-height: none;
+          padding-bottom: 0;
+        }
+      }
     }
     .product-info-box{
       .product-info-box__title,
       .product-info-box__body {
         padding: 5px 0;
         padding-bottom: 26px;
+        @include link_a($primary-color);
       }
     }
     
@@ -60,13 +67,19 @@
       font-size: rem(14);
       font-weight: bold;
       @media screen and (max-width: $phoneWidth){
-        bottom: -10px;
+        bottom: -16px;
+        text-align: center;
       }
     }
   }
 
   &_product-info {
     margin-top: 0;
+    @media screen and (max-width: $phoneWidth){
+      .row {
+        margin-top: 20px;
+      }
+    }
   }
 
   .product-info-box{

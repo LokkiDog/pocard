@@ -376,7 +376,7 @@ a strong{
 
         }
         @media screen and (max-width: 386px  ){
-            font-size: 16px;
+            font-size: 20px;
         }
     }
     &__descr{
@@ -508,7 +508,7 @@ a strong{
         }
         @media screen and (max-width: 367px  ){
             top: -35px;
-            max-width: 214px;
+            max-width: calc(100% - 16px);
         }
         span {
             vertical-align: super;
@@ -1034,11 +1034,17 @@ a strong{
         @media screen and (max-width: $tableWidth ) {
             background: url('../img/top-bg.jpg') no-repeat 68% 0;
         }
+        @media screen and (max-width: $phoneWidth ) {
+            background: url('../img/top-bg.jpg') no-repeat 79% -54%;
+        }
     }
     .row{
         align-items: center;
     }
     .box-border{
+        @media screen and (max-width: $phoneWidth ) {
+            margin-top: 88px;
+        }
         p{
             text-align: left;
         }
@@ -1126,6 +1132,15 @@ a strong{
     top: -100%;
     right: 0;
 }
+
+.lg-two-columns{
+    display: flex; 
+    justify-content: space-between;
+    @media screen and (max-width: $phoneWidth){
+        flex-direction: column
+    }
+}
+
 
 ::-webkit-scrollbar {
     -webkit-appearance: none;

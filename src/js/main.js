@@ -35,6 +35,14 @@ $(function (){
         autoplaySpeed: 2000,
         prevArrow: $('.info-slider__wrapper .slider-prev'),
         nextArrow: $('.info-slider__wrapper .slider-next'),
+        responsive: [
+            {
+              breakpoint: 576,
+              settings: {
+                arrows: false,
+              }
+            },
+        ]
     });
 
     
